@@ -1,0 +1,1172 @@
+/* Top Category */
+.top-category-container {
+  top: 0;
+  left: 0;
+  z-index: 1044;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+
+.top-category-container.sticky {
+  top: 0;
+  transition: 0.1s;
+  transition-delay: 0s;
+}
+
+.top-category {
+  height: 50px;
+  padding: 10px 20px 10px 16px;
+}
+
+.top-category.active {
+  height: 96px;
+  padding: 18px 20px 18px 16px;
+}
+
+.top-category-slide::-webkit-scrollbar {
+  display: none;
+}
+
+.top-category-slide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.top-category-slide {
+  flex-wrap: nowrap;
+  max-height: 24px;
+}
+
+.top-category-slide.active {
+  flex-wrap: wrap;
+  max-height: 56px;
+}
+
+.top-category-slide .single-category {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.top-category-slide.active .single-category {
+  margin-bottom: 12px;
+}
+
+.top-category-slide .single-category.active {
+  font-weight: 700;
+  color: #000000;
+}
+
+.top-category-container .top-category-icon {
+  transform-style: preserve-3d;
+  transform: rotateX(0deg);
+}
+
+.top-category-container .top-category-icon.active {
+  transform: rotateX(-180deg);
+  top: 16px;
+}
+
+/* Home Banner */
+.banner-slide .banner-title {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.banner-slide .banner-content {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #E8E8E8;
+}
+
+.banner-slide .swiper-pagination {
+  position: absolute;
+  display: flex;
+  right: 20px;
+  bottom: 20px;
+  width: fit-content;
+  top: unset;
+  left: unset;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.24);
+  border-radius: 24px;
+  padding: 0px 8px;
+
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.banner-slide.collection-banner .swiper-pagination {
+  right: 12px;
+}
+
+@media only screen and (min-width: 1366px) {
+  .banner-slide .banner-title {
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  .banner-slide .banner-content {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .banner-slide .swiper-pagination {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+    padding: 2px 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .banner-slide .swiper-button-next,
+  .banner-slide .swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: unset;
+    left: 0;
+    right: unset;
+    background: url('../images/home-banner/icons/arrow-slide.png') center center no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner-slide .swiper-button-next {
+    transform: translateY(-50%) rotate(180deg);
+    left: unset;
+    right: 0;
+  }
+
+  .banner-slide .swiper-button-next::after,
+  .banner-slide .swiper-button-prev::after {
+    content: "";
+  }
+}
+
+/* Content Area */
+.content-area {
+  padding-left: 20px;
+}
+
+.content-area .area-title {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.content-area .area-content {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.content-area .card-details .product-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.content-area .card-details .product-name .product-name-type {
+  color: #F176B8;
+}
+
+.content-area .card-details .product-price {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.content-area .card-details .product-price span {
+  font-weight: 400;
+}
+
+.content-area .card-details .product-colors .colors-tooltip {
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content-area .card-details .product-colors .colors-tooltip.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content-area .card-details .more-color,
+.content-area .card-details .more-color-pc {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #787878;
+}
+
+.content-area .card-image .card-order-seller {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.content-area .content-category .single-category {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #787878;
+}
+
+.content-area .content-category .single-category.active {
+  color: #000000;
+  font-weight: 700;
+}
+
+.content-area .filter-text {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+@media only screen and (min-width: 1366px) {
+  .content-area {
+    padding-left: 80px;
+  }
+
+  .content-area .area-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .content-area .area-content {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  .content-area .card-details .product-name {
+    -webkit-line-clamp: 1;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .content-area .card-details .product-price {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .content-area .card-details .more-color,
+  .content-area .card-details .more-color-pc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .content-area .content-category .single-category {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .content-area .card-image .card-order-seller {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .content-area .swiper-scrollbar {
+    width: 100%;
+    left: 0;
+    height: 3px;
+    background: #E8E8E8;
+    top: unset;
+    bottom: 50px;
+    z-index: 0;
+  }
+
+  .content-area .swiper-scrollbar-drag {
+    background: #000000;
+  }
+
+  .content-area .filter-icon {
+    transform-style: preserve-3d;
+  }
+
+  .content-area .filter-icon.active {
+    transform: rotateX(180deg);
+  }
+
+  .content-area .filter-list {
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    overflow: overlay;
+    border: none;
+  }
+
+  .content-area .filter-list.active {
+    max-height: 200px;
+    transition: max-height 0.25s ease-in;
+    box-shadow: 5px 5px 5px#787878;
+    border: 1px solid #E8E8E8;
+  }
+
+  .content-area .filter-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .content-area .filter-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .content-area .filter-list .filter-option {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #BCBCBC;
+  }
+
+  .content-area .filter-list.active .filter-option {
+    color: #000000;
+  }
+
+  .content-area .filter-list .filter-option::after {
+    content: "";
+    width: 13px;
+    height: 9px;
+    background: url('/publish/src/dx/assets/icons/tick-icon.png') center center no-repeat;
+    background-size: cover;
+  }
+
+  .content-area .filter-list .filter-option:hover::after,
+  .content-area .filter-list .filter-option.active::after {
+    background: url('/publish/src/dx/assets/icons/tick-bold-icon.png') center center no-repeat;
+  }
+}
+
+/* For You */
+.for-you::before {
+  background: linear-gradient(180deg, #F9F9F9 0%, #F6F8FA 100%);
+}
+
+/* Best Item */
+.best-items .swiper-slide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.best-items .swiper-slide.swiper-slide-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.best-items .swiper-scrollbar {
+  bottom: 57px;
+}
+
+/* Collection News */
+.collection-banner .banner-title {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.collection-banner .banner-content {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #E8E8E8;
+}
+
+.collection-news .news-title {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.collection-news .news-content {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #787878;
+}
+
+@media only screen and (min-width: 1366px) {
+  .collection-banner .banner-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .collection-banner .banner-content {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .collection .swiper-scrollbar {
+    bottom: 57px;
+  }
+
+  .collection-news .news-title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  .collection-news .news-content {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+/* New Arrival */
+.new-arrival .swiper-slide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.new-arrival .swiper-slide.swiper-slide-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Category Tag */
+.category-tag .single-tag {
+  border: 1px solid #E8E8E8;
+
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #505050;
+}
+
+.category-tag .single-tag.active,
+.category-tag .single-tag:hover {
+  border: 1px solid transparent;
+
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.category-tag .tag-title {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.category-tag .tag-content {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #787878;
+}
+
+@media only screen and (min-width: 1366px) {
+  .trend-tag .swiper-scrollbar {
+    bottom: 57px;
+  }
+
+  .kid-tag .swiper-scrollbar {
+    bottom: 57px;
+  }
+
+  .category-tag .single-tag {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .category-tag .tag-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+/* Middle Banner */
+.middle-banner .middle-banner-title {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.middle-banner .middle-banner-content {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #E8E8E8;
+}
+
+.middle-banner .swiper-scrollbar {
+  bottom: 0;
+  height: 2px;
+  width: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E8E8E8;
+}
+
+.middle-banner .swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: #000000;
+}
+
+@media only screen and (min-width: 1366px) {
+  .middle-banner .middle-banner-title {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .middle-banner .middle-banner-content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .middle-banner .swiper-button-next,
+  .middle-banner .swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: unset;
+    left: 0;
+    right: unset;
+    background: url('../images/home-banner/icons/arrow-slide.png') center center no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .middle-banner .swiper-button-next {
+    transform: translateY(-50%) rotate(180deg);
+    left: unset;
+    right: 0;
+  }
+
+  .middle-banner .swiper-button-next::after,
+  .middle-banner .swiper-button-prev::after {
+    content: "";
+  }
+}
+
+/* Launch */
+.time-countdown-seperate {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+}
+
+.time-countdown-element h2.time {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+}
+
+.time-countdown-element h2.time span {
+  width: 24px;
+  height: 48px;
+}
+
+.time-countdown-element h2.time span.time-top {
+  position: absolute;
+  transform: translateY(-50px);
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.time-countdown-element h2.time span.time-top.change {
+  animation: top-number 0.5s linear;
+}
+
+@keyframes top-number {
+
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.time-countdown-element h2.time span.time-bottom {
+  position: absolute;
+  transform: translateY(0px);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.time-countdown-element h2.time span.time-bottom.change {
+  animation: bottom-number 0.5s linear;
+}
+
+@keyframes bottom-number {
+
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.time-countdown-element h2.time span.time-left span.time-top,
+.time-countdown-element h2.time span.time-left span.time-bottom {
+  justify-content: right;
+}
+
+.time-countdown-element h2.time span.time-right span.time-top,
+.time-countdown-element h2.time span.time-right span.time-bottom {
+  justify-content: left;
+}
+
+.time-countdown-element span.label {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #787878;
+}
+
+.launch.launched {
+  display: none;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0076BA;
+}
+
+@media only screen and (min-width: 1366px) {
+  .time-countdown-seperate {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+    text-transform: uppercase;
+  }
+
+  .time-countdown-element h2.time {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    text-transform: uppercase;
+  }
+
+  .time-countdown-element h2.time span {
+    width: 43px;
+    height: 96px;
+  }
+
+  .time-countdown-element span.label {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .time-countdown-element h2.time span.time-top {
+    transform: translateY(-100px);
+  }
+
+  @keyframes top-number {
+
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes bottom-number {
+
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    100% {
+      transform: translateY(50px);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .launch .launch-info {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0076BA;
+  }
+
+  .launch.launched {
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: uppercase;
+  }
+}
+
+/* Video */
+.video .video-title {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.video .video-content {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #787878;
+}
+
+.video .single-video .video-product-icon {
+  transform-style: preserve-3d;
+  transform: rotateX(0deg);
+}
+
+.video .single-video .video-product-icon.active {
+  transform: rotateX(180deg);
+}
+
+.video .video-product-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.video .video-product-list {
+  max-height: 0;
+  transition: max-height 0.25s ease-out;
+  padding: 0;
+}
+
+.video .video-product-list>div:last-child {
+  padding-bottom: 16px;
+}
+
+.video .video-product-list>div:first-child {
+  padding-top: 16px;
+}
+
+.video .video-product-list.active {
+  max-height: 271px;
+  transition: max-height 0.25s ease-in;
+}
+
+.video-modal {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.video-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 1366px) {
+  .video .video-title {
+    font-weight: 500;
+  }
+
+  .video .video-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .video .video-product-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .video .video-product-list.active {
+    max-height: 388px;
+  }
+
+  .video .swiper-scrollbar {
+    bottom: 354px;
+  }
+}
+
+/* Style Pick */
+.style-pick .content-tag {
+  z-index: 2;
+}
+
+.style-pick .content-tag.disabled {
+  z-index: 0;
+}
+
+.style-pick .swiper-button-next,
+.style-pick .swiper-button-prev {
+  position: absolute;
+  top: 150px;
+  width: 38px;
+  height: 38px;
+  margin-top: 0;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.style-pick .swiper-button-prev {
+  left: 0;
+}
+
+.style-pick .swiper-button-next {
+  right: 20px;
+}
+
+.style-pick .swiper-button-next::after,
+.style-pick .swiper-button-prev::after {
+  content: "";
+  background: url("../images/style-pick/arrow-slide-icon.png") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.style-pick .swiper-button-next::after {
+  transform: rotate(180deg);
+}
+
+.style-pick .pick-tag {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.5057px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.style-pick .pick-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.style-pick .pick-name .blue {
+  color: rgba(0, 118, 186, 1);
+}
+
+.style-pick .pick-price {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.single-product .wish-list {
+  background: url('../images/style-pick/like-icon.png') center center no-repeat;
+}
+
+.single-product .wish-list.active {
+  background: url('../images/style-pick/like-black-icon.png') center center no-repeat;
+}
+
+
+@media only screen and (min-width: 1366px) {
+  .style-pick .pick-tag {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .style-pick .pick-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .style-pick .pick-price {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .style-pick .swiper-scrollbar {
+    bottom: 0;
+  }
+}
+
+/* Discovery Live */
+.discovery-live .live-title {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.discovery-live .live-channel {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.discovery-live .pick-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.discovery-live .pick-price {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+@media only screen and (min-width: 1366px) {
+  .discovery-live .pick-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .discovery-live .pick-price {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Live Modal */
+.live-modal {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.live-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.live-modal .action-bar .live-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.live-modal .product-list .product-name {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.live-modal .product-list .product-price {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.live-modal .product-list .product-number {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.live-modal .live-modal-title {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.live-modal .live-modal-channel {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.live-modal .live-modal-button {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+/* Look Book */
+.look-book .look-tag {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1366px) {
+  .look-book .look-tag {
+    font-size: 48px;
+    line-height: 72px;
+  }
+}

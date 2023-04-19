@@ -1,0 +1,3535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Discovery - Expedition</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="/publish/src/dx/assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="/publish/src/dx/assets/css/tw-elements.min.css"
+    />
+    <script src="/publish/src/dx/assets/js/index.min.js"></script>
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1366px",
+            // => @media (min-width: 1366px) { ... }
+
+            xl: "1920px",
+            // => @media (min-width: 1920px) { ... }
+
+            "2xl": "2560px",
+            // => @media (min-width: 2560px) { ... }
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <!-- <link rel='stylesheet' id='eet-slick-css'  href='https://www.theepochtimes.com/assets/themes/eet/css/slick.css?ver=20170224' type='text/css' media='all' /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/publish/src/dx/components/layout/header/header.css"
+    />
+    <!-- <link rel="stylesheet" href="/publish/src/dx/components/layout/footer/assets/css/footer.css"> -->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header health">
+      <div class="wrapper top_two max-w-[1240px] m-auto px-5">
+        <div
+          class="logo_row flex w-full h-[70px] flex justify-between items-start m-auto pt-[16px] pb-[8px] border-b border-b-[#C5DBE9]"
+        >
+          <div class="eet_logo">
+            <a href="https://www.theepochtimes.com/"
+              ><img
+                src="../assets/themes/eet/images/logo_eet.svg"
+                alt="The Epoch Times"
+            /></a>
+          </div>
+          <div class="logo">
+            <a href="/health">
+              <img
+                src="../assets/themes/eet/images/EpochHealth_logo.svg"
+                alt="Epoch Health"
+              />
+            </a>
+          </div>
+          <div class="search_login flex items-center gap-x-0.5">
+            <div class="flex items-center gap-x-0.5">
+              <button
+                type="button"
+                class="w-[85px] h-[30px] border border-[#979797] text-[11px]"
+              >
+                LOG IN
+              </button>
+              <button
+                type="button"
+                class="w-[85px] h-[30px] border border-[#979797] text-[11px]"
+              >
+                FREE ACCOUNT
+              </button>
+              <button
+                type="button"
+                class="w-[85px] h-[30px] bg-[#007EA8] border border-[#007EA8] text-[11px]"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+            <span class="search"
+              ><img
+                src="../assets/themes/eet/images/bright_search.png"
+                alt="Search Epoch Health"
+            /></span>
+          </div>
+        </div>
+        <nav class="blue h-[53px] w-full">
+          <ul class="flex justify-center items-center h-full text-base">
+            <li class="px-[12px] py-[16px]">
+              <a
+                class="text-[#007EA8]"
+                href="https://www.theepochtimes.com/health/treatments"
+                >Health Conditions</a
+              >
+            </li>
+            <li class="px-[12px] py-[16px]">
+              <a
+                class="text-[#007EA8]"
+                href="https://www.theepochtimes.com/health/experts"
+                >Experts</a
+              >
+            </li>
+            <li class="px-[12px] py-[16px]">
+              <a
+                class="text-[#007EA8]"
+                href="https://www.theepochtimes.com/health/traditional-chinese-medicine"
+                >Traditional Chinese Medicine</a
+              >
+            </li>
+            <li class="px-[12px] py-[16px]">
+              <a
+                class="text-[#007EA8]"
+                href="https://www.theepochtimes.com/health/treatments-and-techniques"
+                >Wellness</a
+              >
+            </li>
+            <li class="px-[12px] py-[16px]">
+              <a
+                class="text-[#007EA8]"
+                href="https://www.theepochtimes.com/epoch-health-explore-by"
+                >Explore By</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main_content">
+        <!-- Main Banner -->
+        <div
+          class="swiper home-banner banner-slide h-[500px] lg:h-[640px] w-full relative mt-[50px] lg:mt-0"
+        >
+          <div
+            class="swiper-wrapper home-banner-container flex justify-start items-start w-full h-full"
+          >
+            <div
+              class="swiper-slide flex flex-col justify-end lg:justify-center items-start h-full pl-[20px] lg:pl-[205px] pb-[62px] lg:pb-0 relative bg-[url('https://img.theepochtimes.com/assets/uploads/2022/12/08/2800x973-3.gif')] bg-center bg-cover bg-no-repeat"
+            ></div>
+            <div
+              class="swiper-slide flex flex-col justify-end lg:justify-center items-start h-full pl-[20px] lg:pl-[205px] pb-[62px] lg:pb-0 relative bg-[url('https://img.theepochtimes.com/assets/uploads/2022/12/08/2800x973-3.gif')] bg-center bg-cover bg-no-repeat"
+            ></div>
+          </div>
+          <div class="hidden lg:flex swiper-button-next"></div>
+          <div class="hidden lg:flex swiper-button-prev"></div>
+        </div>
+
+        <!-- Front featured -->
+        <div class="inner front_featured">
+          <div class="top">
+            <div class="one_post first_post">
+              <div class="section_title">featured</div>
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/banana-smoothie-with-kale-lime-and-cardamom-recipe_5198862.html"
+                  ><img
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/16/id5198880-Shutterstock_334568687-700x420.jpg"
+                    alt="Exclusive: Australian Doctor Suspended for Speaking Out Against COVID-19 Vaccines Takes Medical Regulators to High Court"
+                /></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/fitness-nutrition"
+                    target="_blank"
+                    >Food &amp; Nutrition</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/banana-smoothie-with-kale-lime-and-cardamom-recipe_5198862.html"
+                  ><h3 class="title">
+                    Banana Smoothie With Kale, Lime, and Cardamom (Recipe)
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Summer heat can make your blood hot and your body irritated.
+                  The heat literally stresses your liver. Fortunately, kale and
+                  bananas come to the rescue. A soothing and refreshing treat,
+                  ...
+                </p>
+              </div>
+            </div>
+            
+            <div class="right_side">
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/health/covid-doctor-who-lost-hospital-job-has-a-vision-for-health-care_5198599.html"
+                    ><img
+                      alt="COVID Doctor Who Lost Hospital Job Has a Vision for Health Care"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/19/dr-paul-marik-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2022/10/19/dr-paul-marik-205x123.jpg" /><span
+                      class="premium_icon"
+                    ></span
+                  ></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/health/health-viewpoints"
+                      target="_blank"
+                      >Health Viewpoints</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/health/covid-doctor-who-lost-hospital-job-has-a-vision-for-health-care_5198599.html"
+                    ><h3 class="title two_most title-18">
+                      COVID Doctor Who Lost Hospital Job Has a Vision for Health
+                      Care
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    Despite a stellar career, the sin of insisting on using a
+                    harmless, effective solution (instead of this toxic
+                    substance, halted for Ebola because it was shown to kill
+                    people) resulted ...
+                  </p>
+                  <div class="info"></div>
+                </div>
+              </div>
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/health/the-spice-that-prevents-fluoride-from-destroying-your-brain_5194414.html"
+                    ><img
+                      alt="The Spice That Prevents Fluoride From Destroying Your Brain"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2023/04/14/id5194649-pexels-ranadipta-sadhukhan-12093848-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2023/04/14/id5194649-pexels-ranadipta-sadhukhan-12093848-205x123.jpg"
+                  /></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/health/health-viewpoints"
+                      target="_blank"
+                      >Health Viewpoints</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/health/the-spice-that-prevents-fluoride-from-destroying-your-brain_5194414.html"
+                    ><h3 class="title two_most title-18">
+                      The Spice That Prevents Fluoride From Destroying Your
+                      Brain
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    Fluoride is found everywhere today, from antibiotics to
+                    drinking water, no stick pans to toothpaste, making exposure
+                    inevitable. All the more reason why research proving this
+                    common spice can prevent ...
+                  </p>
+                  <div class="info"></div>
+                </div>
+              </div>
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/health/the-essential-guide-to-parkinsons-disease-symptoms-causes-treatments-and-natural-remedies_5153844.html"
+                    ><img
+                      alt="The Essential Guide to Parkinson’s Disease: Symptoms, Causes, Treatments, and Natural Remedies"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190124-Parkinsons-Disease_Hilary_4.6.2023_clean-03-1-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190124-Parkinsons-Disease_Hilary_4.6.2023_clean-03-1-205x123.jpg" /><span
+                      class="premium_icon"
+                    ></span
+                  ></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/health/parkinsons"
+                      target="_blank"
+                      >Parkinson's Disease</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/health/the-essential-guide-to-parkinsons-disease-symptoms-causes-treatments-and-natural-remedies_5153844.html"
+                    ><h3 class="title two_most title-18">
+                      The Essential Guide to Parkinson’s Disease: Symptoms,
+                      Causes, Treatments, and Natural Remedies
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    Parkinson’s disease affects about 1 million people in North
+                    America and over 10 million people around the globe. In the
+                    United States alone, Parkinson's disease occurs in roughly
+                    13 per ...
+                  </p>
+                  <div class="info"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/is-kidney-dialysis-a-lifetime-burden_5188854.html"
+                  ><img
+                    alt="Is Kidney Dialysis a Lifetime Burden?"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2022/12/10/shutterstock_1363551152-300x180.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2022/12/10/shutterstock_1363551152-300x180.jpg"
+                /></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/tcm-health-conditions"
+                    target="_blank"
+                    >TCM Health Conditions</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/is-kidney-dialysis-a-lifetime-burden_5188854.html"
+                  ><h3 class="title title-18">
+                    Is Kidney Dialysis a Lifetime Burden?
+                  </h3></a
+                >
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/treatment-vs-no-treatment-of-localized-prostate-cancer-had-similar-results-over-15-years-1-question-raised_5188264.html"
+                  ><img
+                    alt="Treatment Vs. No Treatment of Localized Prostate Cancer Had Similar Results Over 15 Years, 1 Question Raised"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190218-shutterstock_2039337305-300x180.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190218-shutterstock_2039337305-300x180.jpg" /><span
+                    class="premium_icon"
+                  ></span
+                ></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/cancer"
+                    target="_blank"
+                    >Cancer</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/treatment-vs-no-treatment-of-localized-prostate-cancer-had-similar-results-over-15-years-1-question-raised_5188264.html"
+                  ><h3 class="title title-18">
+                    Treatment Vs. No Treatment of Localized Prostate Cancer Had
+                    Similar Results Over 15 Years, 1 Question Raised
+                  </h3></a
+                >
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/why-scientists-are-obsessing-over-the-bugs-in-our-stool_5166382.html"
+                  ><img
+                    alt="Why Scientists Are Obsessing Over the Bugs in Our Stool"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/15/id5196718-gut-bacteria--300x180.jpeg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/15/id5196718-gut-bacteria--300x180.jpeg" /><span
+                    class="premium_icon"
+                  ></span
+                ></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/gut-health"
+                    target="_blank"
+                    >Gut Health</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/why-scientists-are-obsessing-over-the-bugs-in-our-stool_5166382.html"
+                  ><h3 class="title title-18">
+                    Why Scientists Are Obsessing Over the Bugs in Our Stool
+                  </h3></a
+                >
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/the-benefits-of-superfood-onion-how-to-maximize-its-full-potential_5194239.html"
+                  ><img
+                    alt="The Benefits of Superfood, Onion: How to Maximize Its Full Potential"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/14/id5194240-Onion_featured-300x180.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/14/id5194240-Onion_featured-300x180.jpg"
+                /></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/fitness-nutrition"
+                    target="_blank"
+                    >Food &amp; Nutrition</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/the-benefits-of-superfood-onion-how-to-maximize-its-full-potential_5194239.html"
+                  ><h3 class="title title-18">
+                    The Benefits of Superfood, Onion: How to Maximize Its Full
+                    Potential
+                  </h3></a
+                >
+                <div class="info"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner col-2">
+          <div class="top_reads">
+            <div class="section_title">Top Reads</div>
+            <div class="article_list">
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/health/brain-injuries-after-covid-vaccination_5188400.html"
+                    ><img
+                      alt="Brain Injuries After COVID Vaccination"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5189227-shutterstock_2017528874-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5189227-shutterstock_2017528874-205x123.jpg" /><span
+                      class="premium_icon"
+                    ></span
+                  ></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/health/health-viewpoints"
+                      target="_blank"
+                      >Health Viewpoints</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/health/brain-injuries-after-covid-vaccination_5188400.html"
+                    ><h3 class="title two_most title-18">
+                      Brain Injuries After COVID Vaccination
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    There are back door routes to the brain. COVID vaccine
+                    developers have traversed a path through those doors. And
+                    they knew they had entered the brain by November 2020,
+                    before ...
+                  </p>
+                  <div class="info">
+                    <span class="pageview">74047</span>
+                    <div class="ymk_social">
+                      <a class="share_link" href="javascript:void(0)"
+                        >share<span class="share" id="share_post_5188400"
+                          >2390</span
+                        ></a
+                      ><span
+                        class="share_dropdown"
+                        data-title="Brain Injuries After COVID Vaccination"
+                        style="display: none"
+                        ><div class="share">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.theepochtimes.com/health/brain-injuries-after-covid-vaccination_5188400.html"
+                            >Facebook</a
+                          ><a
+                            target="_blank"
+                            href="https://twitter.com/intent/tweet?text=Brain Injuries After COVID Vaccination&amp;url=https://www.theepochtimes.com/health/brain-injuries-after-covid-vaccination_5188400.html&amp;via=epochtimes"
+                            >Twitter</a
+                          ><a
+                            href="mailto:?subject=Brain Injuries After COVID Vaccination&amp;body=Brain Injuries After COVID Vaccination: https://www.theepochtimes.com/health/brain-injuries-after-covid-vaccination_5188400.html"
+                            target="_blank"
+                            >Email</a
+                          >
+                        </div></span
+                      ><a
+                        class="cmt_link"
+                        href="https://www.theepochtimes.com/health/brain-injuries-after-covid-vaccination_5188400.html"
+                        >comments<span class="comments" data-cmt_post="5188400"
+                          >313</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/health/amish-farmer-threatened-for-not-giving-up-traditional-farming_5190518.html"
+                    ><img
+                      alt="Amish Farmer Threatened for Not Giving Up Traditional Farming"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190906-shutterstock_478025755-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190906-shutterstock_478025755-205x123.jpg" /><span
+                      class="premium_icon"
+                    ></span
+                  ></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/health/health-viewpoints"
+                      target="_blank"
+                      >Health Viewpoints</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/health/amish-farmer-threatened-for-not-giving-up-traditional-farming_5190518.html"
+                    ><h3 class="title two_most title-18">
+                      Amish Farmer Threatened for Not Giving Up Traditional
+                      Farming
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    Armed federal agents were used to threaten a traditional
+                    Amish farmer just 150 miles outside Washington, D.C., who
+                    does not use pesticides, fertilizer, or gas to run his farm.
+                    Story ...
+                  </p>
+                  <div class="info">
+                    <span class="pageview">67573</span>
+                    <div class="ymk_social">
+                      <a class="share_link" href="javascript:void(0)"
+                        >share<span class="share" id="share_post_5190518"
+                          >2059</span
+                        ></a
+                      ><span
+                        class="share_dropdown"
+                        data-title="Amish Farmer Threatened for Not Giving Up Traditional Farming"
+                        style="display: none"
+                        ><div class="share">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.theepochtimes.com/health/amish-farmer-threatened-for-not-giving-up-traditional-farming_5190518.html"
+                            >Facebook</a
+                          ><a
+                            target="_blank"
+                            href="https://twitter.com/intent/tweet?text=Amish Farmer Threatened for Not Giving Up Traditional Farming&amp;url=https://www.theepochtimes.com/health/amish-farmer-threatened-for-not-giving-up-traditional-farming_5190518.html&amp;via=epochtimes"
+                            >Twitter</a
+                          ><a
+                            href="mailto:?subject=Amish Farmer Threatened for Not Giving Up Traditional Farming&amp;body=Amish Farmer Threatened for Not Giving Up Traditional Farming: https://www.theepochtimes.com/health/amish-farmer-threatened-for-not-giving-up-traditional-farming_5190518.html"
+                            target="_blank"
+                            >Email</a
+                          >
+                        </div></span
+                      ><a
+                        class="cmt_link"
+                        href="https://www.theepochtimes.com/health/amish-farmer-threatened-for-not-giving-up-traditional-farming_5190518.html"
+                        >comments<span class="comments" data-cmt_post="5190518"
+                          >574</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/health/tonsillectomy-a-minor-procedure-with-major-long-term-risks_5100154.html"
+                    ><img
+                      alt="Tonsillectomy: A ‘Minor’ Procedure With Major Long-Term Risks"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2023/03/24/id5148515-scapal--205x123.jpeg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2023/03/24/id5148515-scapal--205x123.jpeg" /><span
+                      class="premium_icon"
+                    ></span
+                  ></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/health/drugs-and-treatments"
+                      target="_blank"
+                      >Drugs &amp; Treatments</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/health/tonsillectomy-a-minor-procedure-with-major-long-term-risks_5100154.html"
+                    ><h3 class="title two_most title-18">
+                      Tonsillectomy: A ‘Minor’ Procedure With Major Long-Term
+                      Risks
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    The Miraculous Immune System (Part 2)
+                  </p>
+                  <div class="info">
+                    <span class="pageview">41249</span>
+                    <div class="ymk_social">
+                      <a class="share_link" href="javascript:void(0)"
+                        >share<span class="share" id="share_post_5100154"
+                          >1947</span
+                        ></a
+                      ><span
+                        class="share_dropdown"
+                        data-title="Tonsillectomy: A ‘Minor’ Procedure With Major Long-Term Risks"
+                        style="display: none"
+                        ><div class="share">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.theepochtimes.com/health/tonsillectomy-a-minor-procedure-with-major-long-term-risks_5100154.html"
+                            >Facebook</a
+                          ><a
+                            target="_blank"
+                            href="https://twitter.com/intent/tweet?text=Tonsillectomy: A ‘Minor’ Procedure With Major Long-Term Risks&amp;url=https://www.theepochtimes.com/health/tonsillectomy-a-minor-procedure-with-major-long-term-risks_5100154.html&amp;via=epochtimes"
+                            >Twitter</a
+                          ><a
+                            href="mailto:?subject=Tonsillectomy: A ‘Minor’ Procedure With Major Long-Term Risks&amp;body=Tonsillectomy: A ‘Minor’ Procedure With Major Long-Term Risks: https://www.theepochtimes.com/health/tonsillectomy-a-minor-procedure-with-major-long-term-risks_5100154.html"
+                            target="_blank"
+                            >Email</a
+                          >
+                        </div></span
+                      ><a
+                        class="cmt_link"
+                        href="https://www.theepochtimes.com/health/tonsillectomy-a-minor-procedure-with-major-long-term-risks_5100154.html"
+                        >comments<span class="comments" data-cmt_post="5100154"
+                          >255</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/health/the-great-covid-19-vaccine-bribe_5193428.html"
+                    ><img
+                      alt="The Great COVID-19 Vaccine Bribe"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2023/04/13/id5193465-Shutterstock_1888351366-1-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2023/04/13/id5193465-Shutterstock_1888351366-1-205x123.jpg" /><span
+                      class="premium_icon"
+                    ></span
+                  ></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/health/health-viewpoints"
+                      target="_blank"
+                      >Health Viewpoints</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/health/the-great-covid-19-vaccine-bribe_5193428.html"
+                    ><h3 class="title two_most title-18">
+                      The Great COVID-19 Vaccine Bribe
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    "COVID-19 vaccine provider incentive program"
+                  </p>
+                  <div class="info">
+                    <span class="pageview">38990</span>
+                    <div class="ymk_social">
+                      <a class="share_link" href="javascript:void(0)"
+                        >share<span class="share" id="share_post_5193428"
+                          >1806</span
+                        ></a
+                      ><span
+                        class="share_dropdown"
+                        data-title="The Great COVID-19 Vaccine Bribe"
+                        style="display: none"
+                        ><div class="share">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.theepochtimes.com/health/the-great-covid-19-vaccine-bribe_5193428.html"
+                            >Facebook</a
+                          ><a
+                            target="_blank"
+                            href="https://twitter.com/intent/tweet?text=The Great COVID-19 Vaccine Bribe&amp;url=https://www.theepochtimes.com/health/the-great-covid-19-vaccine-bribe_5193428.html&amp;via=epochtimes"
+                            >Twitter</a
+                          ><a
+                            href="mailto:?subject=The Great COVID-19 Vaccine Bribe&amp;body=The Great COVID-19 Vaccine Bribe: https://www.theepochtimes.com/health/the-great-covid-19-vaccine-bribe_5193428.html"
+                            target="_blank"
+                            >Email</a
+                          >
+                        </div></span
+                      ><a
+                        class="cmt_link"
+                        href="https://www.theepochtimes.com/health/the-great-covid-19-vaccine-bribe_5193428.html"
+                        >comments<span class="comments" data-cmt_post="5193428"
+                          >393</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="just_in">
+            <div class="section_title">Just In</div>
+            <div class="article_list">
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/australian-doctor-suspended-for-speaking-against-covid-19-vaccines-takes-lawsuit-to-high-court_5202013.html"
+                    ><img
+                      alt="Exclusive: Australian Doctor Suspended for Speaking Out Against COVID-19 Vaccines Takes Medical Regulators to High Court"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/11/01/20221130001736861672-original-min-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2022/11/01/20221130001736861672-original-min-205x123.jpg"
+                  /></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/c-australia"
+                      target="_blank"
+                      >Australia</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/australian-doctor-suspended-for-speaking-against-covid-19-vaccines-takes-lawsuit-to-high-court_5202013.html"
+                    ><h3 class="title two_most title-18">
+                      Exclusive: Australian Doctor Suspended for Speaking Out
+                      Against COVID-19 Vaccines Takes Medical Regulators to High
+                      Court
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    An Australian GP, who has sued medical regulators for
+                    suspending his registration after he said COVID-19 vaccines
+                    were dangerous, has applied for his lawsuit to be
+                    adjudicated by the country’s ...
+                  </p>
+                  <div class="info">
+                    <span class="time"><span class="time_diff">4hr</span></span>
+                    <div class="ymk_social">
+                      <a class="share_link" href="javascript:void(0)"
+                        >share<span class="share" id="share_post_5202013"
+                          >17</span
+                        ></a
+                      ><span
+                        class="share_dropdown"
+                        data-title="Exclusive: Australian Doctor Suspended for Speaking Out Against COVID-19 Vaccines Takes Medical Regulators to High Court"
+                        style="display: none"
+                        ><div class="share">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.theepochtimes.com/australian-doctor-suspended-for-speaking-against-covid-19-vaccines-takes-lawsuit-to-high-court_5202013.html"
+                            >Facebook</a
+                          ><a
+                            target="_blank"
+                            href="https://twitter.com/intent/tweet?text=Exclusive: Australian Doctor Suspended for Speaking Out Against COVID-19 Vaccines Takes Medical Regulators to High Court&amp;url=https://www.theepochtimes.com/australian-doctor-suspended-for-speaking-against-covid-19-vaccines-takes-lawsuit-to-high-court_5202013.html&amp;via=epochtimes"
+                            >Twitter</a
+                          ><a
+                            href="mailto:?subject=Exclusive: Australian Doctor Suspended for Speaking Out Against COVID-19 Vaccines Takes Medical Regulators to High Court&amp;body=Exclusive: Australian Doctor Suspended for Speaking Out Against COVID-19 Vaccines Takes Medical Regulators to High Court: https://www.theepochtimes.com/australian-doctor-suspended-for-speaking-against-covid-19-vaccines-takes-lawsuit-to-high-court_5202013.html"
+                            target="_blank"
+                            >Email</a
+                          >
+                        </div></span
+                      ><a
+                        class="cmt_link"
+                        href="https://www.theepochtimes.com/australian-doctor-suspended-for-speaking-against-covid-19-vaccines-takes-lawsuit-to-high-court_5202013.html"
+                        >comments<span class="comments" data-cmt_post="5202013"
+                          >53</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/health/us-allows-use-of-gamidas-therapy-in-blood-cancer-treatment_5200896.html"
+                    ><img
+                      alt="US Allows Use of Gamida’s Therapy in Blood Cancer Treatment"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/09/17/2022-09-17T041610Z_1_LYNXMPEI8G00W_RTROPTP_4_HEALTH-CORONAVIRUS-VACCINES-BOOSTERS-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2022/09/17/2022-09-17T041610Z_1_LYNXMPEI8G00W_RTROPTP_4_HEALTH-CORONAVIRUS-VACCINES-BOOSTERS-205x123.jpg"
+                  /></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/health/health-news"
+                      target="_blank"
+                      >Health News</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/health/us-allows-use-of-gamidas-therapy-in-blood-cancer-treatment_5200896.html"
+                    ><h3 class="title two_most title-18">
+                      US Allows Use of Gamida’s Therapy in Blood Cancer
+                      Treatment
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    The Food and Drug Administration (FDA) said on Monday it had
+                    approved the use of Gamida Cell Ltd's cell therapy for
+                    cutting the risk of infection in patients undergoing
+                    treatment ...
+                  </p>
+                  <div class="info">
+                    <span class="time"><span class="time_diff">6hr</span></span>
+                    <div class="ymk_social">
+                      <a class="share_link" href="javascript:void(0)"
+                        >share<span class="share" id="share_post_5200896"
+                          >4</span
+                        ></a
+                      ><span
+                        class="share_dropdown"
+                        data-title="US Allows Use of Gamida’s Therapy in Blood Cancer Treatment"
+                        style="display: none"
+                        ><div class="share">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.theepochtimes.com/health/us-allows-use-of-gamidas-therapy-in-blood-cancer-treatment_5200896.html"
+                            >Facebook</a
+                          ><a
+                            target="_blank"
+                            href="https://twitter.com/intent/tweet?text=US Allows Use of Gamida’s Therapy in Blood Cancer Treatment&amp;url=https://www.theepochtimes.com/health/us-allows-use-of-gamidas-therapy-in-blood-cancer-treatment_5200896.html&amp;via=epochtimes"
+                            >Twitter</a
+                          ><a
+                            href="mailto:?subject=US Allows Use of Gamida’s Therapy in Blood Cancer Treatment&amp;body=US Allows Use of Gamida’s Therapy in Blood Cancer Treatment: https://www.theepochtimes.com/health/us-allows-use-of-gamidas-therapy-in-blood-cancer-treatment_5200896.html"
+                            target="_blank"
+                            >Email</a
+                          >
+                        </div></span
+                      ><a
+                        class="cmt_link"
+                        href="https://www.theepochtimes.com/health/us-allows-use-of-gamidas-therapy-in-blood-cancer-treatment_5200896.html"
+                        >comments<span class="comments" data-cmt_post="5200896"
+                          >3</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/texas-house-passes-bill-to-import-prescription-drugs-from-canada_5200263.html"
+                    ><img
+                      alt="Texas House Passes Bill to Import Prescription Drugs From Canada"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2023/04/18/id5202070-Canada-drugs-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2023/04/18/id5202070-Canada-drugs-205x123.jpg" /><span
+                      class="premium_icon"
+                    ></span
+                  ></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/c-policy"
+                      target="_blank"
+                      >Policies &amp; Impacts</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/texas-house-passes-bill-to-import-prescription-drugs-from-canada_5200263.html"
+                    ><h3 class="title two_most title-18">
+                      Texas House Passes Bill to Import Prescription Drugs From
+                      Canada
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    Could bring big savings for consumers on commonly-used
+                    medications
+                  </p>
+                  <div class="info">
+                    <span class="time"><span class="time_diff">7hr</span></span>
+                    <div class="ymk_social">
+                      <a class="share_link" href="javascript:void(0)"
+                        >share<span class="share" id="share_post_5200263"
+                          >9</span
+                        ></a
+                      ><span
+                        class="share_dropdown"
+                        data-title="Texas House Passes Bill to Import Prescription Drugs From Canada"
+                        style="display: none"
+                        ><div class="share">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.theepochtimes.com/texas-house-passes-bill-to-import-prescription-drugs-from-canada_5200263.html"
+                            >Facebook</a
+                          ><a
+                            target="_blank"
+                            href="https://twitter.com/intent/tweet?text=Texas House Passes Bill to Import Prescription Drugs From Canada&amp;url=https://www.theepochtimes.com/texas-house-passes-bill-to-import-prescription-drugs-from-canada_5200263.html&amp;via=epochtimes"
+                            >Twitter</a
+                          ><a
+                            href="mailto:?subject=Texas House Passes Bill to Import Prescription Drugs From Canada&amp;body=Texas House Passes Bill to Import Prescription Drugs From Canada: https://www.theepochtimes.com/texas-house-passes-bill-to-import-prescription-drugs-from-canada_5200263.html"
+                            target="_blank"
+                            >Email</a
+                          >
+                        </div></span
+                      ><a
+                        class="cmt_link"
+                        href="https://www.theepochtimes.com/texas-house-passes-bill-to-import-prescription-drugs-from-canada_5200263.html"
+                        >comments<span class="comments" data-cmt_post="5200263"
+                          >18</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="one_post">
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html"
+                    ><img
+                      alt="Replenish Collagen for Healthy Joints: Best Exercise, Diet, and Supplements to Replenish ‘Shock Absorber’"
+                      class="lazy ll-init ll-loadstarted ll-loaded"
+                      src="https://img.theepochtimes.com/assets/uploads/2023/04/17/id5199651-JOINT_PAIN-COLLAGEN_HD2-205x123.jpg"
+                      data-src="https://img.theepochtimes.com/assets/uploads/2023/04/17/id5199651-JOINT_PAIN-COLLAGEN_HD2-205x123.jpg" /><span
+                      class="premium_icon"
+                    ></span
+                  ></a>
+                </div>
+                <div class="details">
+                  <div class="cat_name">
+                    <a
+                      href="https://www.theepochtimes.com/c-vital-signs"
+                      target="_blank"
+                      >Vital Signs</a
+                    >
+                  </div>
+                  <a
+                    href="https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html"
+                    ><h3 class="title two_most title-18">
+                      Replenish Collagen for Healthy Joints: Best Exercise,
+                      Diet, and Supplements to Replenish ‘Shock Absorber’
+                    </h3></a
+                  >
+                  <p class="excerpt excerpt-14">
+                    Replenish Collagen for Healthy Joints: Best Exercise, Diet,
+                    and Supplements to Replenish 'Shock Absorber' Of the 28
+                    types of collagen, there are two that are vital to the
+                    health and ...
+                  </p>
+                  <div class="info">
+                    <span class="time"
+                      ><span class="time_diff">20hr</span></span
+                    >
+                    <div class="ymk_social">
+                      <a class="share_link" href="javascript:void(0)"
+                        >share<span class="share" id="share_post_5199479"
+                          >578</span
+                        ></a
+                      ><span
+                        class="share_dropdown"
+                        data-title="Replenish Collagen for Healthy Joints: Best Exercise, Diet, and Supplements to Replenish ‘Shock Absorber’"
+                        style="display: none"
+                        ><div class="share">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html"
+                            >Facebook</a
+                          ><a
+                            target="_blank"
+                            href="https://twitter.com/intent/tweet?text=Replenish Collagen for Healthy Joints: Best Exercise, Diet, and Supplements to Replenish ‘Shock Absorber’&amp;url=https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html&amp;via=epochtimes"
+                            >Twitter</a
+                          ><a
+                            href="mailto:?subject=Replenish Collagen for Healthy Joints: Best Exercise, Diet, and Supplements to Replenish ‘Shock Absorber’&amp;body=Replenish Collagen for Healthy Joints: Best Exercise, Diet, and Supplements to Replenish ‘Shock Absorber’: https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html"
+                            target="_blank"
+                            >Email</a
+                          >
+                        </div></span
+                      ><a
+                        class="cmt_link"
+                        href="https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html"
+                        >comments<span class="comments" data-cmt_post="5199479"
+                          >43</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner explore_by">
+          <div class="section_title">
+            <a href="https://www.theepochtimes.com/epoch-health-explore-by"
+              >Explore By</a
+            >
+            <div class="see_all">
+              <a href="https://www.theepochtimes.com/epoch-health-explore-by"
+                >SEE ALL &gt;</a
+              >
+            </div>
+          </div>
+          <!-- Swiper Slider Explore -->
+          <div class="swiper product-slider-1 px-[36px]">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide flex flex-col justify-center items-center relative"
+              >
+                <div
+                  class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                >
+                  <a
+                    href="https://www.theepochtimes.com/health/dna"
+                    tabindex="-1"
+                    ><img
+                      class="rounded-[50%] w-[180px] h-[180px]"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/07/id4782942-DNA-avatar.jpg"
+                      alt="DNA"
+                  /></a>
+                </div>
+                <div class="topic">
+                  <a
+                    href="https://www.theepochtimes.com/health/dna"
+                    target="_blank"
+                    tabindex="0"
+                    >DNA</a
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col justify-center items-center relative"
+              >
+                <div
+                  class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                >
+                  <a
+                    href="https://www.theepochtimes.com/health/thyroid-health"
+                    tabindex="-1"
+                    ><img
+                      class="rounded-[50%] w-[180px] h-[180px]"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/11/id4788679-Thyroid-Health-avatar-min.jpg"
+                      alt="Thyroid Health"
+                  /></a>
+                </div>
+                <div class="topic">
+                  <a
+                    href="https://www.theepochtimes.com/health/dna"
+                    target="_blank"
+                    tabindex="0"
+                    >DNA</a
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col justify-center items-center ralative"
+              >
+                <div
+                  class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                >
+                  <a
+                    href="https://www.theepochtimes.com/health/food-as-medicine"
+                    tabindex="-1"
+                    ><img
+                      class="rounded-[50%] w-[180px] h-[180px]"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/10/id4787235-Food-as-Medicine-avatar.jpg"
+                      alt="Food as Medicine"
+                  /></a>
+                </div>
+                <div class="topic">
+                  <a
+                    href="https://www.theepochtimes.com/health/dna"
+                    target="_blank"
+                    tabindex="0"
+                    >DNA</a
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col justify-center items-center relative"
+              >
+                <div
+                  class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                >
+                  <a
+                    href="https://www.theepochtimes.com/health/toxins"
+                    tabindex="0"
+                    ><img
+                      class="rounded-[50%] w-[180px] h-[180px]"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/10/id4787280-toxins-icon.jpg"
+                      alt="Toxins"
+                  /></a>
+                </div>
+                <div class="topic">
+                  <a
+                    href="https://www.theepochtimes.com/health/dna"
+                    target="_blank"
+                    tabindex="0"
+                    >DNA</a
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col justify-center items-center relative"
+              >
+                <div
+                  class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                >
+                  <a
+                    href="https://www.theepochtimes.com/health/minerals"
+                    tabindex="0"
+                    ><img
+                      class="rounded-[50%] w-[180px] h-[180px]"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/19/id4808107-nutr-icon.jpg"
+                      alt="Minerals"
+                  /></a>
+                </div>
+                <div class="topic">
+                  <a
+                    href="https://www.theepochtimes.com/health/dna"
+                    target="_blank"
+                    tabindex="0"
+                    >DNA</a
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col justify-center items-center relative"
+              >
+                <div
+                  class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                >
+                  <a
+                    href="https://www.theepochtimes.com/health/sugar"
+                    tabindex="0"
+                    ><img
+                      class="rounded-[50%] w-[180px] h-[180px]"
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/10/id4787239-sugar-icon.jpg"
+                      alt="Sugar"
+                  /></a>
+                </div>
+                <div class="topic">
+                  <a
+                    href="https://www.theepochtimes.com/health/dna"
+                    target="_blank"
+                    tabindex="0"
+                    >DNA</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="outer voices">
+          <div class="inner">
+            <div class="section_title">
+              <a href="https://www.theepochtimes.com/health/experts">Experts</a>
+              <div class="see_all">
+                <a href="https://www.theepochtimes.com/health/experts"
+                  >SEE ALL &gt;</a
+                >
+              </div>
+            </div>
+            <!-- Swiper Slider Experts -->
+            <div class="swiper product-slider-1 px-[36px]">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center relative"
+                >
+                  <div
+                    class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                  >
+                    <a
+                      href="https://www.theepochtimes.com/author-james-templeton"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/10/07/James-Templeton.jpg"
+                        alt="James Templeton"
+                    /></a>
+                  </div>
+                  <div class="person">
+                    <div class="name">
+                      <a
+                        href="https://www.theepochtimes.com/author-james-templeton"
+                        target="_blank"
+                        tabindex="0"
+                        >James Templeton</a
+                      >
+                    </div>
+                    <div class="title"></div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center relative"
+                >
+                  <div
+                    class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                  >
+                    <a
+                      href="https://www.theepochtimes.com/author-dr-ann-corson"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/10/05/Dr.-Ann-Corson.jpg"
+                        alt="Dr. Ann Corson"
+                    /></a>
+                  </div>
+                  <div class="person">
+                    <div class="name">
+                      <a
+                        href="https://www.theepochtimes.com/author-dr-ann-corson"
+                        target="_blank"
+                        tabindex="0"
+                        >Dr. Ann Corson</a
+                      >
+                    </div>
+                    <div class="title">MD</div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center ralative"
+                >
+                  <div
+                    class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                  >
+                    <a
+                      href="https://www.theepochtimes.com/author-datis-kharrazian"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/10/05/Datis-Kharrazian.jpg"
+                        alt="Datis Kharrazian"
+                    /></a>
+                  </div>
+                  <div class="person">
+                    <div class="name">
+                      <a
+                        href="https://www.theepochtimes.com/author-datis-kharrazian"
+                        target="_blank"
+                        tabindex="0"
+                        >Datis Kharrazian</a
+                      >
+                    </div>
+                    <div class="title">Ph.D.</div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center relative"
+                >
+                  <div
+                    class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                  >
+                    <a
+                      href="https://www.theepochtimes.com/author-ashley-turner"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/10/07/Ashley-Turner.jpg"
+                        alt="Ashley Turner"
+                    /></a>
+                  </div>
+                  <div class="person">
+                    <div class="name">
+                      <a
+                        href="https://www.theepochtimes.com/author-ashley-turner"
+                        target="_blank"
+                        tabindex="0"
+                        >Ashley Turner</a
+                      >
+                    </div>
+                    <div class="title">BCDHH</div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center relative"
+                >
+                  <div
+                    class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                  >
+                    <a
+                      href="https://www.theepochtimes.com/author-dr-yuhong-dong"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/10/07/Dr.-Yuhong-Dong.jpg"
+                        alt="Yuhong Dong"
+                    /></a>
+                  </div>
+                  <div class="person">
+                    <div class="name">
+                      <a
+                        href="https://www.theepochtimes.com/author-dr-yuhong-dong"
+                        target="_blank"
+                        tabindex="0"
+                        >Yuhong Dong</a
+                      >
+                    </div>
+                    <div class="title">M.D., Ph.D.</div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center relative"
+                >
+                  <div
+                    class="card-image flex flex-col justify-start items-start w-[180px] relative"
+                  >
+                    <a
+                      href="https://www.theepochtimes.com/author-mike-donghia"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/10/05/Mike-Donghia.jpg"
+                        alt="Mike Donghia"
+                    /></a>
+                  </div>
+                  <div class="person">
+                    <div class="name">
+                      <a
+                        href="https://www.theepochtimes.com/author-mike-donghia"
+                        target="_blank"
+                        tabindex="0"
+                        >Mike Donghia</a
+                      >
+                    </div>
+                    <div class="title"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            
+            <div class="col-2">
+              <div class="latest">
+                <div class="section_title">
+                  Latest
+                  <div class="see_all">
+                    <a href="https://www.theepochtimes.com/health/experts"
+                      >SEE ALL &gt;</a
+                    >
+                  </div>
+                </div>
+                <div class="experts_pieces">
+                  <div class="one_post">
+                    <div class="avatar">
+                      <a
+                        href="https://www.theepochtimes.com/author-dan-skorbach"
+                        target="_blank"
+                        ><img
+                          src="https://www.theepochtimes.com/assets/themes/eet/images/default-user.png"
+                          alt="Dan Skorbach"
+                      /></a>
+                    </div>
+                    <div class="details">
+                      <div class="cat_name">
+                        <a
+                          href="https://www.theepochtimes.com/author-dan-skorbach"
+                          target="_blank"
+                          >Dan Skorbach</a
+                        >
+                      </div>
+                      <a
+                        href="https://www.theepochtimes.com/worlds-longest-study-do-this-now-to-have-great-health-in-your-80s_5119533.html"
+                        ><h3 class="title two_most title-18">
+                          World’s Longest Study: Do This Now to Have Great
+                          Health in Your 80s
+                        </h3></a
+                      >
+                      <div class="info">
+                        <span class="time"
+                          ><span class="time_diff">31d</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="one_post">
+                    <div class="avatar">
+                      <a
+                        href="https://www.theepochtimes.com/author-makai-allbert"
+                        target="_blank"
+                        ><img
+                          src="https://img.theepochtimes.com/assets/uploads/2023/01/27/MakaiAllbert_WEB.jpg"
+                          alt="Makai Allbert"
+                      /></a>
+                    </div>
+                    <div class="details">
+                      <div class="cat_name">
+                        <a
+                          href="https://www.theepochtimes.com/author-makai-allbert"
+                          target="_blank"
+                          >Makai Allbert</a
+                        >
+                      </div>
+                      <a
+                        href="https://www.theepochtimes.com/health/1-shot-might-boost-immunity-and-fight-covid-across-variants_5100290.html"
+                        ><h3 class="title two_most title-18">
+                          1 Shot Might Boost Immunity and Fight COVID Across
+                          Variants
+                        </h3></a
+                      >
+                      <div class="info">
+                        <span class="time"
+                          ><span class="time_diff">37d</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="one_post">
+                    <div class="avatar">
+                      <a
+                        href="https://www.theepochtimes.com/author-dr-peter-a-mccullough"
+                        target="_blank"
+                        ><img
+                          src="https://img.theepochtimes.com/assets/uploads/2022/10/28/PeterAMcCullough_WEB.jpg"
+                          alt="Dr. Peter A. McCullough"
+                      /></a>
+                    </div>
+                    <div class="details">
+                      <div class="cat_name">
+                        <a
+                          href="https://www.theepochtimes.com/author-dr-peter-a-mccullough"
+                          target="_blank"
+                          >Dr. Peter A. McCullough</a
+                        >
+                      </div>
+                      <a
+                        href="https://www.theepochtimes.com/health/why-the-body-attacks-itself-after-covid-19-vaccination_5110136.html"
+                        ><h3 class="title two_most title-18">
+                          Why the Body Attacks Itself After COVID-19 Vaccination
+                        </h3></a
+                      >
+                      <div class="info">
+                        <span class="time"
+                          ><span class="time_diff">38d</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="one_post">
+                    <div class="avatar">
+                      <a
+                        href="https://www.theepochtimes.com/author-angela-bright"
+                        target="_blank"
+                        ><img
+                          src="https://www.theepochtimes.com/assets/themes/eet/images/default-user.png"
+                          alt="Angela Bright"
+                      /></a>
+                    </div>
+                    <div class="details">
+                      <div class="cat_name">
+                        <a
+                          href="https://www.theepochtimes.com/author-angela-bright"
+                          target="_blank"
+                          >Angela Bright</a
+                        >
+                      </div>
+                      <a
+                        href="https://www.theepochtimes.com/health/symptoms-of-iron-deficiency-and-where-to-find-it-in-food_5101566.html"
+                        ><h3 class="title two_most title-18">
+                          Symptoms of Iron Deficiency and Where to Find It in
+                          Food
+                        </h3></a
+                      >
+                      <div class="info">
+                        <span class="time"
+                          ><span class="time_diff">38d</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <div class="section_title">
+                  Popular
+                  <div class="see_all">
+                    <a href="https://www.theepochtimes.com/health/experts"
+                      >SEE ALL &gt;</a
+                    >
+                  </div>
+                </div>
+                <div class="experts_pieces">
+                  <div class="one_post">
+                    <div class="avatar">
+                      <a
+                        href="https://www.theepochtimes.com/author-brendon-fallon"
+                        target="_blank"
+                        ><img
+                          src="https://img.theepochtimes.com/assets/uploads/2021/07/08/Screen-Shot-2021-07-08-at-4.30.58-PM.jpg"
+                          alt="Brendon Fallon"
+                      /></a>
+                    </div>
+                    <div class="details">
+                      <div class="info">
+                        <span class="cat_name"
+                          ><a
+                            href="https://www.theepochtimes.com/author-brendon-fallon"
+                            target="_blank"
+                            >Brendon Fallon</a
+                          ></span
+                        >
+                      </div>
+                      <a
+                        href="https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html"
+                        ><h3 class="title two_most title-18">
+                          Replenish Collagen for Healthy Joints: Best Exercise,
+                          Diet, and Supplements to Replenish ‘Shock Absorber’
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                  <div class="one_post">
+                    <div class="avatar">
+                      <a
+                        href="https://www.theepochtimes.com/author-dr-peter-a-mccullough"
+                        target="_blank"
+                        ><img
+                          src="https://img.theepochtimes.com/assets/uploads/2022/10/28/PeterAMcCullough_WEB.jpg"
+                          alt="Dr. Peter A. McCullough"
+                      /></a>
+                    </div>
+                    <div class="details">
+                      <div class="info">
+                        <span class="cat_name"
+                          ><a
+                            href="https://www.theepochtimes.com/author-dr-peter-a-mccullough"
+                            target="_blank"
+                            >Dr. Peter A. McCullough</a
+                          ></span
+                        >
+                      </div>
+                      <a
+                        href="https://www.theepochtimes.com/health/holy-grail-of-covid-19-spike-protein-detoxification_5075372.html"
+                        ><h3 class="title two_most title-18">
+                          Holy Grail of COVID-19 Spike Protein Detoxification
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                  <div class="one_post">
+                    <div class="avatar">
+                      <a
+                        href="https://www.theepochtimes.com/author-robert-w-malone"
+                        target="_blank"
+                        ><img
+                          src="https://img.theepochtimes.com/assets/uploads/2022/04/11/https___bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com_public_images_0eb501a5-9fd2-4174-9231-6d6a73139db9_400x400.jpeg"
+                          alt="Robert W Malone"
+                      /></a>
+                    </div>
+                    <div class="details">
+                      <div class="info">
+                        <span class="cat_name"
+                          ><a
+                            href="https://www.theepochtimes.com/author-robert-w-malone"
+                            target="_blank"
+                            >Robert W Malone</a
+                          ></span
+                        >
+                      </div>
+                      <a
+                        href="https://www.theepochtimes.com/health/dr-redfields-bombshell-testimony_5112580.html"
+                        ><h3 class="title two_most title-18">
+                          Dr. Redfield’s Bombshell Testimony
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                  <div class="one_post">
+                    <div class="avatar">
+                      <a
+                        href="https://www.theepochtimes.com/author-dr-peter-a-mccullough"
+                        target="_blank"
+                        ><img
+                          src="https://img.theepochtimes.com/assets/uploads/2022/10/28/PeterAMcCullough_WEB.jpg"
+                          alt="Dr. Peter A. McCullough"
+                      /></a>
+                    </div>
+                    <div class="details">
+                      <div class="info">
+                        <span class="cat_name"
+                          ><a
+                            href="https://www.theepochtimes.com/author-dr-peter-a-mccullough"
+                            target="_blank"
+                            >Dr. Peter A. McCullough</a
+                          ></span
+                        >
+                      </div>
+                      <a
+                        href="https://www.theepochtimes.com/health/xylitol-nasal-spray-prevents-sars-cov-2-infection_5078218.html"
+                        ><h3 class="title two_most title-18">
+                          Xylitol Nasal Spray Prevents SARS-CoV-2 Infection:
+                          Study
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="watch_now">
+          <div class="wrapper">
+            <div class="section_title">
+              <a href="https://www.theepochtimes.com/c-lifestyle-learning"
+                >Watch Now</a
+              >
+              <div class="see_all">
+                <a href="https://www.theepochtimes.com/c-lifestyle-learning"
+                  >SEE ALL &gt;</a
+                >
+              </div>
+            </div>
+            <div
+              class="show_list slide_container slick-initialized slick-slider"
+            >
+              <div aria-live="polite" class="slick-list draggable">
+                <div
+                  class="slick-track"
+                  role="listbox"
+                  style="
+                    opacity: 1;
+                    width: 1195px;
+                    transform: translate3d(0px, 0px, 0px);
+                  "
+                >
+                  <span
+                    class="slider slick-slide slick-current slick-active"
+                    data-slick-index="0"
+                    aria-hidden="false"
+                    tabindex="-1"
+                    role="option"
+                    aria-describedby="slick-slide20"
+                    style="width: 219px"
+                    ><a
+                      href="https://www.theepochtimes.com/c-vital-signs"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/08/15/id4666291-440x880-home-poster.png"
+                        alt="Vital Signs" /></a></span
+                  ><span
+                    class="slider slick-slide slick-active"
+                    data-slick-index="1"
+                    aria-hidden="false"
+                    tabindex="-1"
+                    role="option"
+                    aria-describedby="slick-slide21"
+                    style="width: 219px"
+                    ><a
+                      href="https://www.theepochtimes.com/c-frontline-health"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/08/16/id4668889-FLH-440x880.jpg"
+                        alt="Frontline Health" /></a></span
+                  ><span
+                    class="slider slick-slide slick-active"
+                    data-slick-index="2"
+                    aria-hidden="false"
+                    tabindex="-1"
+                    role="option"
+                    aria-describedby="slick-slide22"
+                    style="width: 219px"
+                    ><a
+                      href="https://www.theepochtimes.com/c-real-health-with-stacey-holland"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/05/09/id4455566-RH-440x880.jpg"
+                        alt="Real Health with Stacey Holland" /></a></span
+                  ><span
+                    class="slider slick-slide slick-active"
+                    data-slick-index="3"
+                    aria-hidden="false"
+                    tabindex="-1"
+                    role="option"
+                    aria-describedby="slick-slide23"
+                    style="width: 219px"
+                    ><a
+                      href="https://www.theepochtimes.com/c-health-care"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/08/23/id4684216-Healthcare-440x880.jpg"
+                        alt="Health Care" /></a></span
+                  ><span
+                    class="slider slick-slide slick-active"
+                    data-slick-index="4"
+                    aria-hidden="false"
+                    tabindex="-1"
+                    role="option"
+                    aria-describedby="slick-slide24"
+                    style="width: 219px"
+                    ><a
+                      href="https://www.theepochtimes.com/c-covid-19"
+                      tabindex="0"
+                      ><img
+                        src="https://img.theepochtimes.com/assets/uploads/2022/09/29/id4765056-Covid-c-440x880.jpg"
+                        alt="Covid-19" /></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner conditions">
+          <div class="section_title">
+            <a href="https://www.theepochtimes.com/health/treatments"
+              >Health Conditions</a
+            >
+            <div class="see_all">
+              <a href="https://www.theepochtimes.com/health/treatments"
+                >SEE ALL &gt;</a
+              >
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="one_topic_card">
+              <div class="image">
+                <img
+                  src="https://img.theepochtimes.com/assets/uploads/2022/10/07/id4780819-Rectangle-1939.jpg"
+                  alt="Heart Health"
+                />
+                <div class="overlay_shadow"></div>
+              </div>
+              <div class="text">
+                <h2 class="topic">
+                  <a href="https://www.theepochtimes.com/health/heart-disease"
+                    >Heart Health</a
+                  >
+                </h2>
+                <div class="see_more">
+                  <a
+                    href="https://www.theepochtimes.com/health/heart-disease"
+                    target="_blank"
+                    >See More &gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="one_topic_card">
+              <div class="image">
+                <img
+                  src="https://img.theepochtimes.com/assets/uploads/2022/10/07/id4780836-Diabetes-avatar.jpg"
+                  alt="Diabetes"
+                />
+                <div class="overlay_shadow"></div>
+              </div>
+              <div class="text">
+                <h2 class="topic">
+                  <a href="https://www.theepochtimes.com/health/diabetes"
+                    >Diabetes</a
+                  >
+                </h2>
+                <div class="see_more">
+                  <a
+                    href="https://www.theepochtimes.com/health/diabetes"
+                    target="_blank"
+                    >See More &gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="one_topic_card">
+              <div class="image">
+                <img
+                  src="https://img.theepochtimes.com/assets/uploads/2022/10/13/id4794310-guthealth-icon.jpg"
+                  alt="Gut Health"
+                />
+                <div class="overlay_shadow"></div>
+              </div>
+              <div class="text">
+                <h2 class="topic">
+                  <a href="https://www.theepochtimes.com/health/gut-health"
+                    >Gut Health</a
+                  >
+                </h2>
+                <div class="see_more">
+                  <a
+                    href="https://www.theepochtimes.com/health/gut-health"
+                    target="_blank"
+                    >See More &gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="one_topic_card">
+              <div class="image">
+                <img
+                  src="https://img.theepochtimes.com/assets/uploads/2022/10/05/id4775694-Rectangle-1889.jpg"
+                  alt="Cancer"
+                />
+                <div class="overlay_shadow"></div>
+              </div>
+              <div class="text">
+                <h2 class="topic">
+                  <a href="https://www.theepochtimes.com/health/cancer"
+                    >Cancer</a
+                  >
+                </h2>
+                <div class="see_more">
+                  <a
+                    href="https://www.theepochtimes.com/health/cancer"
+                    target="_blank"
+                    >See More &gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="one_topic_card">
+              <div class="image">
+                <img
+                  src="https://img.theepochtimes.com/assets/uploads/2022/10/07/id4780806-ColdFlu-avatar.jpg"
+                  alt="Cold &amp; Flu"
+                />
+                <div class="overlay_shadow"></div>
+              </div>
+              <div class="text">
+                <h2 class="topic">
+                  <a href="https://www.theepochtimes.com/health/cold-flu"
+                    >Cold &amp; Flu</a
+                  >
+                </h2>
+                <div class="see_more">
+                  <a
+                    href="https://www.theepochtimes.com/health/cold-flu"
+                    target="_blank"
+                    >See More &gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="one_topic_card">
+              <div class="image">
+                <img
+                  src="https://img.theepochtimes.com/assets/uploads/2022/10/07/id4780871-Brain-Health-avatar.jpg"
+                  alt="Brain Health"
+                />
+                <div class="overlay_shadow"></div>
+              </div>
+              <div class="text">
+                <h2 class="topic">
+                  <a href="https://www.theepochtimes.com/health/brain-health"
+                    >Brain Health</a
+                  >
+                </h2>
+                <div class="see_more">
+                  <a
+                    href="https://www.theepochtimes.com/health/brain-health"
+                    target="_blank"
+                    >See More &gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner">
+          <div class="newsletter">
+            <div class="info">
+              <div class="heading">Subscribe to Our Newsletter</div>
+              <div class="text">
+                Our best health stories delivered straight to your inbox daily
+              </div>
+              <div class="subscribe">
+                <a
+                  href="https://www.theepochtimes.com/newsletter"
+                  target="_blank"
+                >
+                  <label for="newsletter_subscribe">Email:</label>
+                  <input
+                    id="newsletter_subscribe"
+                    type="email"
+                    name="newsletter_subscribe"
+                    placeholder="Enter your email"
+                  />
+                  <button>Subscribe</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner magazine">
+          <div class="section_title">
+            <a href="/edition-epoch-health">Deep Dives</a>
+            <div class="see_all">
+              <a href="/edition-epoch-health">SEE ALL &gt;</a>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="one_magazine">
+              <a
+                href="https://www.theepochtimes.com/edition/the-ultimate-guide-to-aging-with-vitality_4432104"
+                ><img
+                  alt="The Ultimate Guide to Aging With Vitality"
+                  src="https://img.theepochtimes.com/assets/uploads/2022/10/26/id4822271-2022_10_26_004_EPOCH_Health.jpg"
+                />
+                <h4 class="title">
+                  The Ultimate Guide to Aging With Vitality
+                </h4></a
+              >
+            </div>
+            <div class="one_magazine">
+              <a
+                href="https://www.theepochtimes.com/edition/cultivating-our-gut-microbes-to-stifle-disease_5182380"
+                ><img
+                  alt="Cultivating Our Gut Microbes to Stifle Disease"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/09/id5182383-week-15_MB.jpg"
+                />
+                <h4 class="title">
+                  Cultivating Our Gut Microbes to Stifle Disease
+                </h4></a
+              >
+            </div>
+            <div class="one_magazine">
+              <a
+                href="https://www.theepochtimes.com/edition/wegovy-ozempic-isnt-a-miracle-drug-its-part-of-the-problem_5170500"
+                ><img
+                  alt="Wegovy/Ozempic: Isn’t a Miracle Drug, It’s Part of the Problem"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/04/id5170511-week-14_MB.jpg"
+                />
+                <h4 class="title">
+                  Wegovy/Ozempic: Isn’t a Miracle Drug, It’s Part of the Problem
+                </h4></a
+              >
+            </div>
+            <div class="one_magazine">
+              <a
+                href="https://www.theepochtimes.com/edition/sugar-in-processed-foods-and-drinks-linked-to-dementia_5151159"
+                ><img
+                  alt="Sugar in Processed Foods and Drinks Linked to Dementia"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/03/27/id5151166-week-13_MB.jpg"
+                />
+                <h4 class="title">
+                  Sugar in Processed Foods and Drinks Linked to Dementia
+                </h4></a
+              >
+            </div>
+            <div class="one_magazine">
+              <a
+                href="https://www.theepochtimes.com/edition/high-dose-vitamin-d-may-treat-incurable-diseases-experts_5134885"
+                ><img
+                  alt="High-Dose Vitamin D May Treat Incurable  Diseases: Experts"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/03/20/id5134888-week-12_MB.jpg"
+                />
+                <h4 class="title">
+                  High-Dose Vitamin D May Treat Incurable Diseases: Experts
+                </h4></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inner banner tcm slick-initialized slick-slider slick-dotted"
+        role="toolbar"
+      >
+        <div aria-live="polite" class="slick-list draggable">
+          <div
+            class="slick-track"
+            role="listbox"
+            style="opacity: 1; width: 2400px"
+          >
+            <div
+              class="image slick-slide"
+              data-slick-index="0"
+              aria-hidden="true"
+              tabindex="-1"
+              role="option"
+              aria-describedby="slick-slide50"
+              style="
+                width: 1200px;
+                position: relative;
+                left: 0px;
+                top: 0px;
+                z-index: 998;
+                opacity: 0;
+                transition: opacity 500ms linear 0s;
+              "
+            >
+              <img
+                src="https://img.theepochtimes.com/assets/uploads/2022/10/06/Health-slide3.jpg"
+                alt="Epoch Health"
+              />
+            </div>
+            <div
+              class="image slick-slide slick-current slick-active"
+              data-slick-index="1"
+              aria-hidden="false"
+              tabindex="-1"
+              role="option"
+              aria-describedby="slick-slide51"
+              style="
+                width: 1200px;
+                position: relative;
+                left: -1200px;
+                top: 0px;
+                z-index: 999;
+                opacity: 1;
+              "
+            >
+              <a
+                href="https://www.theepochtimes.com/health/what-is-tcm"
+                tabindex="0"
+                ><img
+                  src="https://img.theepochtimes.com/assets/uploads/2022/10/06/Health-slide4.jpg"
+                  alt="Epoch Health"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <ul class="slick-dots" style="display: block" role="tablist">
+          <li
+            class=""
+            aria-hidden="true"
+            role="presentation"
+            aria-selected="true"
+            aria-controls="navigation50"
+            id="slick-slide50"
+          >
+            <button type="button" data-role="none" role="button" tabindex="0">
+              1
+            </button>
+          </li>
+          <li
+            aria-hidden="false"
+            role="presentation"
+            aria-selected="false"
+            aria-controls="navigation51"
+            id="slick-slide51"
+            class="slick-active"
+          >
+            <button type="button" data-role="none" role="button" tabindex="0">
+              2
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="inner front_featured">
+        <div class="top">
+          <div class="see_all">
+            <a
+              href="https://www.theepochtimes.com/health/traditional-chinese-medicine"
+              >SEE ALL &gt;</a
+            >
+          </div>
+          <div class="one_post first_post">
+            <div class="section_title">
+              <a
+                href="https://www.theepochtimes.com/health/traditional-chinese-medicine"
+                >Traditional Chinese Medicine</a
+              >
+            </div>
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/social-isolation-increases-risk-of-dementia-in-elderly-experts-recommend-ways-to-prevent-dementia_5185963.html"
+                ><img
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/14/id5195708-dementia.001-700x420.jpg"
+                  alt="Replenish Collagen for Healthy Joints: Best Exercise, Diet, and Supplements to Replenish ‘Shock Absorber’"
+              /></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/dementia"
+                  target="_blank"
+                  >Dementia &amp; Alzheimer's</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/social-isolation-increases-risk-of-dementia-in-elderly-experts-recommend-ways-to-prevent-dementia_5185963.html"
+                ><h3 class="title">
+                  Social Isolation Increases Risk of Dementia in Elderly,
+                  Experts Recommend Ways to Prevent Dementia
+                </h3></a
+              >
+              <p class="excerpt excerpt-14">
+                It's common for older adults to feel lonely or isolated as they
+                age. About 1 in 4 Americans over the age of 65 is socially
+                isolated. Studies have also found ...
+              </p>
+            </div>
+          </div>
+          <div class="right_side">
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/eminent-physicians-no-1-health-regimen-to-increase-immunity_5186498.html"
+                  ><img
+                    alt="Eminent Physician’s No. 1 Health Regimen to Increase Immunity"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/11/id5186533-Dr.-Hu-Naiwen-205x123.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/11/id5186533-Dr.-Hu-Naiwen-205x123.jpg"
+                /></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/tcm-wellness"
+                    target="_blank"
+                    >TCM Wellness</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/eminent-physicians-no-1-health-regimen-to-increase-immunity_5186498.html"
+                  ><h3 class="title two_most title-18">
+                    Eminent Physician’s No. 1 Health Regimen to Increase
+                    Immunity
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Hu Naiwen, a 76-year-old well-known traditional Chinese
+                  medicine (TCM) practitioner, sees many patients every day. He
+                  is also a celebrity TCM physician on YouTube. His YouTube
+                  health program has over ...
+                </p>
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/black-pepper-the-king-of-spices-5-health-benefits-you-should-know_5189207.html"
+                  ><img
+                    alt="Black Pepper, the ‘King of Spices’–5 Health Benefits You Should Know"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/13/id5191485-Shutterstock_1013574415-1-205x123.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/13/id5191485-Shutterstock_1013574415-1-205x123.jpg" /><span
+                    class="premium_icon"
+                  ></span
+                ></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/fitness-nutrition"
+                    target="_blank"
+                    >Food &amp; Nutrition</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/black-pepper-the-king-of-spices-5-health-benefits-you-should-know_5189207.html"
+                  ><h3 class="title two_most title-18">
+                    Black Pepper, the ‘King of Spices’–5 Health Benefits You
+                    Should Know
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Black pepper,&nbsp;often referred to as the "king of spices,"
+                  is a popular culinary spice known for its distinct pungent
+                  flavor that comes from its alkaloid component, piperine. Black
+                  pepper is ...
+                </p>
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/8-warning-signs-of-stomach-cancer-and-how-to-prevent-it_5172487.html"
+                  ><img
+                    alt="8 Warning Signs of Stomach Cancer and How to Prevent It"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2022/02/20/shutterstock_526016176-205x123.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2022/02/20/shutterstock_526016176-205x123.jpg" /><span
+                    class="premium_icon"
+                  ></span
+                ></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/traditional-chinese-medicine"
+                    target="_blank"
+                    >Traditional Chinese Medicine</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/8-warning-signs-of-stomach-cancer-and-how-to-prevent-it_5172487.html"
+                  ><h3 class="title two_most title-18">
+                    8 Warning Signs of Stomach Cancer and How to Prevent It
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Stomach cancer, also called gastric cancer, has a higher
+                  incidence and mortality rate than other types of cancer. On
+                  March 10, Japan's second top men's national volleyball team
+                  passer, Naonobu ...
+                </p>
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/8-major-functions-of-vitamin-b-complex-and-4-groups-who-need-more_5185651.html"
+                  ><img
+                    alt="8 Major Functions of Vitamin B Complex, and 4 Groups Who Need More"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/11/id5185759-vB.001-205x123.jpeg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/11/id5185759-vB.001-205x123.jpeg"
+                /></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/supplements"
+                    target="_blank"
+                    >Vitamins &amp; Supplements</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/8-major-functions-of-vitamin-b-complex-and-4-groups-who-need-more_5185651.html"
+                  ><h3 class="title two_most title-18">
+                    8 Major Functions of Vitamin B Complex, and 4 Groups Who
+                    Need More
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Vitamin B complex is a compound of 8 water-soluble B
+                  vitamins&nbsp;that work synergistically together and are vital
+                  for the human body. Vitamin B complex can be quickly absorbed
+                  by the ...
+                </p>
+                <div class="info"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="one_post">
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/dragons-blood-one-of-the-most-potent-sources-of-antioxidants-on-the-planet_5164864.html"
+                ><img
+                  alt="Dragon’s Blood: One of the Most Potent Sources of Antioxidants on the Planet"
+                  class="lazy ll-init ll-loadstarted ll-loaded"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/10/id5185172-Shutterstock_1353809072-1-300x180.jpg"
+                  data-src="https://img.theepochtimes.com/assets/uploads/2023/04/10/id5185172-Shutterstock_1353809072-1-300x180.jpg" /><span
+                  class="premium_icon"
+                ></span
+              ></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/natural-medicine"
+                  target="_blank"
+                  >Natural Medicine</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/dragons-blood-one-of-the-most-potent-sources-of-antioxidants-on-the-planet_5164864.html"
+                ><h3 class="title title-18">
+                  Dragon’s Blood: One of the Most Potent Sources of Antioxidants
+                  on the Planet
+                </h3></a
+              >
+              <div class="info"></div>
+            </div>
+          </div>
+          <div class="one_post">
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/this-nutrient-found-in-vegetables-protects-eyes-and-enhances-cognitive-ability_5182912.html"
+                ><img
+                  alt="This Nutrient Found in Vegetables Protects Eyes and Enhances Cognitive Ability"
+                  class="lazy ll-init ll-loadstarted ll-loaded"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/10/id5182994-vegi.001-300x180.jpeg"
+                  data-src="https://img.theepochtimes.com/assets/uploads/2023/04/10/id5182994-vegi.001-300x180.jpeg"
+              /></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/eye-health"
+                  target="_blank"
+                  >Eye Health</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/this-nutrient-found-in-vegetables-protects-eyes-and-enhances-cognitive-ability_5182912.html"
+                ><h3 class="title title-18">
+                  This Nutrient Found in Vegetables Protects Eyes and Enhances
+                  Cognitive Ability
+                </h3></a
+              >
+              <div class="info"></div>
+            </div>
+          </div>
+          <div class="one_post">
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/hot-flashes-insomnia-depression-essential-oils-to-relieve-menopausal-discomfort_5159795.html"
+                ><img
+                  alt="Essential Oils to Relieve Menopausal Discomfort of Hot Flashes, Insomnia, Depression"
+                  class="lazy ll-init ll-loadstarted ll-loaded"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/03/30/id5160944-essential-oils-and-leaves-shutterstock-300x180.jpg"
+                  data-src="https://img.theepochtimes.com/assets/uploads/2023/03/30/id5160944-essential-oils-and-leaves-shutterstock-300x180.jpg"
+              /></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/menopause"
+                  target="_blank"
+                  >Menopause</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/hot-flashes-insomnia-depression-essential-oils-to-relieve-menopausal-discomfort_5159795.html"
+                ><h3 class="title title-18">
+                  Essential Oils to Relieve Menopausal Discomfort of Hot
+                  Flashes, Insomnia, Depression
+                </h3></a
+              >
+              <div class="info"></div>
+            </div>
+          </div>
+          <div class="one_post">
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/the-secret-of-longevity-in-traditional-japanese-cuisine-from-ingredients-to-preparation_5180731.html"
+                ><img
+                  alt="The Secret of Longevity in Traditional Japanese Cuisine, From Ingredients to Preparation"
+                  class="lazy ll-init ll-loadstarted ll-loaded"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/08/id5180735-Japan-Longetivity_featured-300x180.jpg"
+                  data-src="https://img.theepochtimes.com/assets/uploads/2023/04/08/id5180735-Japan-Longetivity_featured-300x180.jpg"
+              /></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/fitness-nutrition"
+                  target="_blank"
+                  >Food &amp; Nutrition</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/the-secret-of-longevity-in-traditional-japanese-cuisine-from-ingredients-to-preparation_5180731.html"
+                ><h3 class="title title-18">
+                  The Secret of Longevity in Traditional Japanese Cuisine, From
+                  Ingredients to Preparation
+                </h3></a
+              >
+              <div class="info"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner experts">
+        <div class="section_title">
+          Experts
+          <div class="see_all">SEE ALL &gt;</div>
+        </div>
+        <div class="slide_container tcm people slick-initialized slick-slider">
+          <div
+            class="slick-prev slick-arrow"
+            aria-disabled="false"
+            style="display: block"
+          >
+            <img alt="prev" src="/assets/themes/eet/images/arrow_left.png" />
+          </div>
+
+          <div aria-live="polite" class="slick-list draggable">
+            <div
+              class="slick-track"
+              role="listbox"
+              style="
+                opacity: 1;
+                width: 2880px;
+                transform: translate3d(-720px, 0px, 0px);
+              "
+            >
+              <div
+                class="one_post slick-slide"
+                data-slick-index="0"
+                aria-hidden="true"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide30"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-wu-kuo-pin"
+                    tabindex="-1"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/12/09/Wu-Kuo-pin-1.jpg"
+                      alt="Dr. Wu Kuo-Pin"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-wu-kuo-pin"
+                      target="_blank"
+                      tabindex="-1"
+                      >Dr. Wu Kuo-Pin</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide"
+                data-slick-index="1"
+                aria-hidden="true"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide31"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-jingduan-yang-m-d"
+                    tabindex="-1"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/12/19/Jingduan-Yang.jpg"
+                      alt="Dr. Jingduan Yang"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-jingduan-yang-m-d"
+                      target="_blank"
+                      tabindex="-1"
+                      >Dr. Jingduan Yang</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide"
+                data-slick-index="2"
+                aria-hidden="true"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide32"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-dr-hu-naiwen"
+                    tabindex="-1"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2023/02/09/Dr.-Hu-Naiwen.jpg"
+                      alt="Dr. Hu Naiwen"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-dr-hu-naiwen"
+                      target="_blank"
+                      tabindex="-1"
+                      >Dr. Hu Naiwen</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide slick-current slick-active"
+                data-slick-index="3"
+                aria-hidden="false"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide33"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-amber-yang"
+                    tabindex="0"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2023/01/31/Amber-Yang.jpg"
+                      alt="Amber Yang"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-amber-yang"
+                      target="_blank"
+                      tabindex="0"
+                      >Amber Yang</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide slick-active"
+                data-slick-index="4"
+                aria-hidden="false"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide34"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-cheryl-ng"
+                    tabindex="0"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/12/09/Cheryl-Ng-1.jpg"
+                      alt="Cheryl Ng"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-cheryl-ng"
+                      target="_blank"
+                      tabindex="0"
+                      >Cheryl Ng</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide slick-active"
+                data-slick-index="5"
+                aria-hidden="false"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide35"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-may-cheng"
+                    tabindex="0"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/12/09/May-Cheng-1.jpg"
+                      alt="May Cheng"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-may-cheng"
+                      target="_blank"
+                      tabindex="0"
+                      >May Cheng</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide slick-active"
+                data-slick-index="6"
+                aria-hidden="false"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide36"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-dr-jonathan-liu"
+                    tabindex="0"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/12/19/Jonathan.jpg"
+                      alt="Dr. Jonathan Liu"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-dr-jonathan-liu"
+                      target="_blank"
+                      tabindex="0"
+                      >Dr. Jonathan Liu</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide slick-active"
+                data-slick-index="7"
+                aria-hidden="false"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide37"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-moreen-liao"
+                    tabindex="0"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/11/25/Moreen-Liao.jpg"
+                      alt="Moreen Liao"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-moreen-liao"
+                      target="_blank"
+                      tabindex="0"
+                      >Moreen Liao</a
+                    >
+                  </div>
+                  <div class="title">R.Ph. of TCM (Taiwan)</div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide"
+                data-slick-index="8"
+                aria-hidden="true"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide38"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-dr-serene-feng"
+                    tabindex="-1"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/12/20/Dr.-Serene-Feng.jpg"
+                      alt="Dr. Serene Feng"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-dr-serene-feng"
+                      target="_blank"
+                      tabindex="-1"
+                      >Dr. Serene Feng</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide"
+                data-slick-index="9"
+                aria-hidden="true"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide39"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-teng-cheng-liang"
+                    tabindex="-1"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/07/Teng-Cheng-Liang.jpg"
+                      alt="Dr. Teng Cheng Liang"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-teng-cheng-liang"
+                      target="_blank"
+                      tabindex="-1"
+                      >Dr. Teng Cheng Liang</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide"
+                data-slick-index="10"
+                aria-hidden="true"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide310"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-li-ke"
+                    tabindex="-1"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/10/07/Li-Ke.jpg"
+                      alt="Dr. Li Ke"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-li-ke"
+                      target="_blank"
+                      tabindex="-1"
+                      >Dr. Li Ke</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div
+                class="one_post slick-slide"
+                data-slick-index="11"
+                aria-hidden="true"
+                tabindex="-1"
+                role="option"
+                aria-describedby="slick-slide311"
+                style="width: 220px"
+              >
+                <div class="image">
+                  <a
+                    href="https://www.theepochtimes.com/author-alice-zhu"
+                    tabindex="-1"
+                    ><img
+                      src="https://img.theepochtimes.com/assets/uploads/2022/11/03/Alice-Zhu1-min.jpg"
+                      alt="Alice Zhu"
+                  /></a>
+                </div>
+                <div class="person">
+                  <div class="name">
+                    <a
+                      href="https://www.theepochtimes.com/author-alice-zhu"
+                      target="_blank"
+                      tabindex="-1"
+                      >Alice Zhu</a
+                    >
+                  </div>
+                  <div class="title"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slick-next slick-arrow"
+            style="display: block"
+            aria-disabled="false"
+          >
+            <img alt="prev" src="/assets/themes/eet/images/arrow_right.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="inner front_featured">
+        <div class="top">
+          <div class="see_all">
+            <a
+              href="https://www.theepochtimes.com/health/treatments-and-techniques"
+              >SEE ALL &gt;</a
+            >
+          </div>
+          <div class="one_post first_post">
+            <div class="section_title">
+              <a
+                href="https://www.theepochtimes.com/health/treatments-and-techniques"
+                >Wellness</a
+              >
+            </div>
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/is-your-clothing-drenched-in-forever-chemicals_5189492.html"
+                ><img
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/14/id5195174-workout-clothes-700x420.jpeg"
+                  alt="Replenish Collagen for Healthy Joints: Best Exercise, Diet, and Supplements to Replenish ‘Shock Absorber’"
+              /></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/toxins"
+                  target="_blank"
+                  >Toxins</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/is-your-clothing-drenched-in-forever-chemicals_5189492.html"
+                ><h3 class="title">
+                  Is Your Clothing Drenched in ‘Forever Chemicals’?
+                </h3></a
+              >
+              <p class="excerpt excerpt-14">
+                The term dressed to kill has taken on a whole new meaning.
+                Dangerous chemicals are now so ubiquitous they are in our water
+                supply, the food we eat, and even—the ...
+              </p>
+            </div>
+          </div>
+          <div class="right_side">
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html"
+                  ><img
+                    alt="Replenish Collagen for Healthy Joints: Best Exercise, Diet, and Supplements to Replenish ‘Shock Absorber’"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/17/id5199651-JOINT_PAIN-COLLAGEN_HD2-205x123.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/17/id5199651-JOINT_PAIN-COLLAGEN_HD2-205x123.jpg" /><span
+                    class="premium_icon"
+                  ></span
+                ></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/c-vital-signs"
+                    target="_blank"
+                    >Vital Signs</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/replenish-collagen-for-healthy-joints-best-exercise-diet-and-supplements-to-replenish-shock-absorber_5199479.html"
+                  ><h3 class="title two_most title-18">
+                    Replenish Collagen for Healthy Joints: Best Exercise, Diet,
+                    and Supplements to Replenish ‘Shock Absorber’
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Replenish Collagen for Healthy Joints: Best Exercise, Diet,
+                  and Supplements to Replenish 'Shock Absorber' Of the 28 types
+                  of collagen, there are two that are vital to the health and
+                  ...
+                </p>
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/amish-farmer-threatened-for-not-giving-up-traditional-farming_5190518.html"
+                  ><img
+                    alt="Amish Farmer Threatened for Not Giving Up Traditional Farming"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190906-shutterstock_478025755-205x123.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190906-shutterstock_478025755-205x123.jpg" /><span
+                    class="premium_icon"
+                  ></span
+                ></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/health-viewpoints"
+                    target="_blank"
+                    >Health Viewpoints</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/amish-farmer-threatened-for-not-giving-up-traditional-farming_5190518.html"
+                  ><h3 class="title two_most title-18">
+                    Amish Farmer Threatened for Not Giving Up Traditional
+                    Farming
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Armed federal agents were used to threaten a traditional Amish
+                  farmer just 150 miles outside Washington, D.C., who does not
+                  use pesticides, fertilizer, or gas to run his farm. Story ...
+                </p>
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/how-meditation-can-help-you-age-better-look-younger-and-live-longer_5158861.html"
+                  ><img
+                    alt="How Meditation Can Help You Age Better, Look Younger, and Live Longer"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/11/id5187370-377199e87184_b9be4fe15956f78f69c35c1a-205x123.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/11/id5187370-377199e87184_b9be4fe15956f78f69c35c1a-205x123.jpg" /><span
+                    class="premium_icon"
+                  ></span
+                ></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/aging"
+                    target="_blank"
+                    >Aging Well</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/how-meditation-can-help-you-age-better-look-younger-and-live-longer_5158861.html"
+                  ><h3 class="title two_most title-18">
+                    How Meditation Can Help You Age Better, Look Younger, and
+                    Live Longer
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Friederike Fabritius, an internationally renowned
+                  neuroscientist and leadership expert, recently noticed the
+                  positive changes in her father, who’s 73 years old, after he
+                  started practicing meditation. In her email to ...
+                </p>
+                <div class="info"></div>
+              </div>
+            </div>
+            <div class="one_post">
+              <div class="image">
+                <a
+                  href="https://www.theepochtimes.com/health/maintaining-testosterone-in-a-world-trying-to-keep-it-down_5174574.html"
+                  ><img
+                    alt="How to Maintain Your Testosterone Levels in a World That Wants to Bring Them Down"
+                    class="lazy ll-init ll-loadstarted ll-loaded"
+                    src="https://img.theepochtimes.com/assets/uploads/2023/04/11/id5185438-Shutterstock_1153713451-1-205x123.jpg"
+                    data-src="https://img.theepochtimes.com/assets/uploads/2023/04/11/id5185438-Shutterstock_1153713451-1-205x123.jpg" /><span
+                    class="premium_icon"
+                  ></span
+                ></a>
+              </div>
+              <div class="details">
+                <div class="cat_name">
+                  <a
+                    href="https://www.theepochtimes.com/health/mens-health"
+                    target="_blank"
+                    >Men's Health</a
+                  >
+                </div>
+                <a
+                  href="https://www.theepochtimes.com/health/maintaining-testosterone-in-a-world-trying-to-keep-it-down_5174574.html"
+                  ><h3 class="title two_most title-18">
+                    How to Maintain Your Testosterone Levels in a World That
+                    Wants to Bring Them Down
+                  </h3></a
+                >
+                <p class="excerpt excerpt-14">
+                  Age isn't the predominant cause of low testosterone and there
+                  are things you can do to maintain your levels
+                </p>
+                <div class="info"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="one_post">
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/5-evidence-based-natural-supplements-for-getting-good-sleep-and-combating-insomnia_5195120.html"
+                ><img
+                  alt="5 Evidence-Based Natural Supplements to Fight Insomnia and Improve Sleep"
+                  class="lazy ll-init ll-loadstarted ll-loaded"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/15/id5197392-shutterstock_384249955-300x180.jpg"
+                  data-src="https://img.theepochtimes.com/assets/uploads/2023/04/15/id5197392-shutterstock_384249955-300x180.jpg" /><span
+                  class="premium_icon"
+                ></span
+              ></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/sleep"
+                  target="_blank"
+                  >Sleep</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/5-evidence-based-natural-supplements-for-getting-good-sleep-and-combating-insomnia_5195120.html"
+                ><h3 class="title title-18">
+                  5 Evidence-Based Natural Supplements to Fight Insomnia and
+                  Improve Sleep
+                </h3></a
+              >
+              <div class="info"></div>
+            </div>
+          </div>
+          <div class="one_post">
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/why-dietary-cholesterol-is-important-plus-recipes_5192053.html"
+                ><img
+                  alt="Why Dietary Cholesterol Is Important, Plus Recipes"
+                  class="lazy ll-init ll-loadstarted ll-loaded"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/13/id5192607-shutterstock_1054843277-300x180.jpg"
+                  data-src="https://img.theepochtimes.com/assets/uploads/2023/04/13/id5192607-shutterstock_1054843277-300x180.jpg"
+              /></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/fitness-nutrition"
+                  target="_blank"
+                  >Food &amp; Nutrition</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/why-dietary-cholesterol-is-important-plus-recipes_5192053.html"
+                ><h3 class="title title-18">
+                  Why Dietary Cholesterol Is Important, Plus Recipes
+                </h3></a
+              >
+              <div class="info"></div>
+            </div>
+          </div>
+          <div class="one_post">
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/firehouse-chili-with-oatmeal-recipe_5190995.html"
+                ><img
+                  alt="Firehouse Chili (with Oatmeal) Recipe"
+                  class="lazy ll-init ll-loadstarted ll-loaded"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190996-shutterstock_1811555305-300x180.jpg"
+                  data-src="https://img.theepochtimes.com/assets/uploads/2023/04/12/id5190996-shutterstock_1811555305-300x180.jpg"
+              /></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/fitness-nutrition"
+                  target="_blank"
+                  >Food &amp; Nutrition</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/firehouse-chili-with-oatmeal-recipe_5190995.html"
+                ><h3 class="title title-18">
+                  Firehouse Chili (with Oatmeal) Recipe
+                </h3></a
+              >
+              <div class="info"></div>
+            </div>
+          </div>
+          <div class="one_post">
+            <div class="image">
+              <a
+                href="https://www.theepochtimes.com/health/uncovering-the-differences-why-natural-fluoride-and-synthetic-fluoride-are-not-created-equal_5156272.html"
+                ><img
+                  alt="Uncovering the Differences: Why Natural Fluoride and Synthetic Fluoride Are Not Created Equal"
+                  class="lazy ll-init ll-loadstarted ll-loaded"
+                  src="https://img.theepochtimes.com/assets/uploads/2023/04/13/id5191472-Shutterstock_1007226595-1-300x180.jpg"
+                  data-src="https://img.theepochtimes.com/assets/uploads/2023/04/13/id5191472-Shutterstock_1007226595-1-300x180.jpg" /><span
+                  class="premium_icon"
+                ></span
+              ></a>
+            </div>
+            <div class="details">
+              <div class="cat_name">
+                <a
+                  href="https://www.theepochtimes.com/health/toxins"
+                  target="_blank"
+                  >Toxins</a
+                >
+              </div>
+              <a
+                href="https://www.theepochtimes.com/health/uncovering-the-differences-why-natural-fluoride-and-synthetic-fluoride-are-not-created-equal_5156272.html"
+                ><h3 class="title title-18">
+                  Uncovering the Differences: Why Natural Fluoride and Synthetic
+                  Fluoride Are Not Created Equal
+                </h3></a
+              >
+              <div class="info"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Button -->
+      <div
+        class="top-button fixed right-[12px] bottom-[24px] w-[40px] h-[40px] rounded-[28px] bg-[rgba(255,255,255,0.8)] flex justify-center items-center cursor-pointer z-[1044]"
+        style="
+          box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.12),
+            0px 0px 2px rgba(0, 0, 0, 0.12);
+          backdrop-filter: blur(10px);
+        "
+      >
+        <img
+          src="../assets/images/home/top-button-icon.png"
+          class="block"
+          alt=""
+        />
+      </div>
+      <div
+        class="hidden lg:flex fixed right-[12px] bottom-[72px] w-[40px] h-[40px] rounded-[28px] bg-[rgba(255,255,255,0.8)] justify-center items-center cursor-pointer z-[1044]"
+        style="
+          box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.12),
+            0px 0px 2px rgba(0, 0, 0, 0.12);
+          backdrop-filter: blur(10px);
+        "
+      >
+        <img src="../assets/images/home/clock-icon.png" class="block" alt="" />
+      </div>
+    </main>
+
+    <!-- header for desktop -->
+    <footer>
+      <div class="footer mt-[136px] px-[90px] bg-[#F8F8F8] py-[40px]">
+        <div
+          class="space-y-[21px] w-full border-b border-b-solid border-b-[#E8E8E8] pb-[20px]"
+        >
+          <div class="flex items-center justify-start flex-col gap-[18px]">
+            <div class="w-full flex justify-between">
+              <div class="flex justify-start items-center gap-2">
+                <p class="text-xs font-medium text-left text-black">
+                  ABOUT DISCOVERY
+                </p>
+                <div class="w-px h-2.5 bg-[#e8e8e8]"></div>
+                <p class="text-xs font-medium text-left text-black">공지사항</p>
+                <div class="w-px h-2.5 bg-[#e8e8e8]"></div>
+                <p class="text-xs font-medium text-left text-black">고객센터</p>
+              </div>
+              <div
+                class="flex justify-start items-center mt-[1px]"
+                data-te-dropdown-position="dropup"
+              >
+                <button
+                  id="dropdownMenuButtonLanguage"
+                  type="button"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  class="flex"
+                >
+                  <p
+                    class="family-AppleSD opacity-[0.85] text-[12px] text-right text-[#949494]"
+                  >
+                    KOREAN
+                  </p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 relative"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M5.83337 8.33325L10 12.4999L14.1667 8.33325"
+                      stroke="#949494"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+                <ul
+                  class="dropdown-language absolute z-[1000] px-[16px] py-[10px] float-left m-0 hidden min-w-max list-none overflow-hidden border-[#E8E8E8] rounded border bg-white bg-clip-padding text-left text-base [&[data-te-dropdown-show]]:flex flex-col leading-[20px]"
+                  aria-labelledby="dropdownMenuButtonLanguage"
+                  data-te-dropdown-menu-ref
+                >
+                  <li>
+                    <a
+                      class="family-AppleSDBold block w-full whitespace-nowrap bg-transparent text-[12px] font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >KOREAN</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="family-AppleSD block w-full whitespace-nowrap bg-transparent text-[12px] font-normal text-[#787878] hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >ENGLISH</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="w-full flex justify-between">
+              <div
+                class="w-[280px] flex justify-center items-center self-stretch h-10 gap-2 py-2.5 rounded-md bg-[#1b365d]"
+              >
+                <button
+                  class="outline-none flex justify-center items-center flex-grow h-7 gap-1 w-full"
+                >
+                  <div class="flex justify-start items-center gap-1.5">
+                    <img
+                      src="../../../../../src/dx/PC/assets/icons/discovery.svg"
+                      alt=""
+                    />
+                    <p class="text-xs font-medium text-center text-white">
+                      Discovery Expedition 매장 안내
+                    </p>
+                  </div>
+                </button>
+              </div>
+
+              <div class="flex justify-start items-start gap-[12px]">
+                <img
+                  src="../../../../../src/dx/PC/assets/icons/chanel-1.svg"
+                  alt=""
+                />
+                <img
+                  src="../../../../../src/dx/PC/assets/icons/chanel-2.svg"
+                  alt=""
+                />
+                <img
+                  src="../../../../../src/dx/PC/assets/icons/chanel-3.svg"
+                  alt=""
+                />
+                <img
+                  src="../../../../../src/dx/PC/assets/icons/chanel-4.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-[25px] h-[30px] mb-[9px]">
+          <div class="flex justify-between items-center">
+            <div id="accordionExample" class="max-[575px]:w-full">
+              <button
+                class="family-AppleSD group justify-between items-end relative flex transition text-xs max-[575px]:w-full text-black font-medium"
+                type="button"
+                id="collapse-footer"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseFooterOne"
+                aria-expanded="false"
+                aria-controls="collapseFooterOne"
+              >
+                (주) 에프앤에프 사업자 정보
+                <span
+                  class="h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11"
+                    height="6"
+                    viewBox="0 0 11 6"
+                    fill="none"
+                    class="ml-[6px] mt-[8px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="black"
+                      d="M10 0.5L5.5 5L1 0.499999"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                id="collapseFooterOne"
+                class="!visible hidden mt-[10px]"
+                data-te-collapse-item
+                aria-labelledby="headingThree"
+                data-te-parent="#accordionExample"
+              >
+                <div
+                  class="family-AppleSD leading-[18px] font-[400] flex flex-col justify-start items-start self-stretch flex-grow-0 opacity-[0.85] flex-shrink-0 gap-2"
+                >
+                  <div class="flex flex-col justify-start items-start">
+                    <p class="w-full text-[12px] text-left text-[#949494]">
+                      대표: 김창수 / 서울특별시 강남구 언주로 541 에프앤에프빌딩
+                    </p>
+                    <div class="flex justify-start items-start gap-2">
+                      <p class="text-[12px] text-left text-[#949494]">
+                        사업자 등록번호: 153-81-02451
+                      </p>
+                      <p class="text-[12px] text-left text-[#949494] underline">
+                        사업자정보 확인
+                      </p>
+                    </div>
+                    <p class="text-[12px] text-left text-[#949494]">
+                      통신판매업 신고번호 : 제2021-서울강남-03353호
+                    </p>
+                    <p class="text-[12px] text-left text-[#949494]">
+                      개인정보보호 책임자 : 류영석
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-start items-start">
+                    <p
+                      class="text-[12px] max-[768px]:max-w-[311px] text-left text-[#949494]"
+                    >
+                      교환<span class="ml-[-2px]">・</span>반품 반송처 : 경기도
+                      이천시 대월면 초지리 57 F&F 물류센터 디스커버리 물류부
+                    </p>
+                    <p
+                      class="text-[12px] max-[768px]:max-w-[311px] text-left text-[#949494]"
+                    >
+                      고객센터 : 080-820-8802 / 운영시간 : 평일 오전 9시 ~ 오후
+                      6시(토/일/공휴일 휴무)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative max-[575px]:hidden" data-te-dropdown-ref>
+              <button
+                class="group flex justify-start items-start pl-2.5 dropdown-menu text-sm text-left text-black"
+                type="button"
+                id="dropdownMenuButton9"
+                data-te-dropdown-toggle-ref
+                aria-expanded="false"
+                data-te-ripple-init
+              >
+                <p class="text-sm text-left text-black">FAMILY SITE</p>
+                <span
+                  class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[0deg] down-caret"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11"
+                    height="6"
+                    viewBox="0 0 11 6"
+                    fill="none"
+                    class="ml-[6px] mt-[8px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="black"
+                      d="M10 0.5L5.5 5L1 0.499999"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+              <ul
+                class="z-[1000] float-left m-0 border-[#E8E8E8] border top-1 w-[128px] hidden min-w-max list-none overflow-hidden rounded-lg bg-white bg-clip-padding text-left text-base dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                data-te-dropdown-menu-ref
+              >
+                <li>
+                  <a
+                    class="block w-full font-bold whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm text-black hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >FAMILY SITE</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm font-normal text-gray-787878 hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >MLB</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm font-normal text-gray-787878 hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >MLB KIDS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm font-normal text-gray-787878 hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >STRETCH ANGELS</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm font-normal text-gray-787878 hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >DUVETICA</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm font-normal text-gray-787878 hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >BANILA CO</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm font-normal text-gray-787878 hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >COLLECTED</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm font-normal text-gray-787878 hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >JARDIN PERDU</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-transparent py-2 pl-2.5 text-sm font-normal text-gray-787878 hover:text-black hover:font-bold active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >F&F</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-full justify-between flex items-start">
+          <div
+            class="flex justify-start items-center flex-grow h-fit relative gap-[6px] pb-[2px] flex-wrap"
+          >
+            <button
+              data-te-target="#example3"
+              type="button"
+              data-te-toggle="modal"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <p
+                class="family-AppleSD text-[12px] opacity-[0.85] text-left text-[#949494]"
+              >
+                이용약관
+              </p>
+            </button>
+            <div class="w-px h-2.5 bg-[#e8e8e8]"></div>
+            <button
+              data-te-target="#example4"
+              type="button"
+              data-te-toggle="modal"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <p
+                class="family-AppleSDBold mt-[2px] text-[12px] text-left text-[#949494]"
+              >
+                개인정보처리방침
+              </p>
+            </button>
+            <div class="w-px h-2.5 bg-[#e8e8e8]"></div>
+            <button
+              data-te-target="#example7"
+              type="button"
+              data-te-toggle="modal"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <p
+                class="family-AppleSD font-[400] ml-[1px] opacity-[0.85] text-[12px] text-left text-[#949494]"
+              >
+                채무지급보증 내역
+              </p>
+            </button>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex gap-1">
+              <img
+                src="../../../../../src/dx/PC/assets/icons/app-store.svg"
+                alt=""
+              /><span>App Store</span>
+            </div>
+            <div class="flex gap-1">
+              <img
+                src="../../../../../src/dx/PC/assets/icons/google-play.svg"
+                alt=""
+              /><span>Google Play</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-[13px] w-full justify-start flex items-center">
+          <p class="text-[12px] leading-[18px] text-[#949494] opacity-[0.85]">
+            © F&F CO.LTD.ALL RIGHTS RESERVED
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- <script src="../assets/js/script.js"></script> -->
+    <!-- <script type='text/javascript' defer src='https://www.theepochtimes.com/assets/themes/eet/js/slick.js?ver=20170324'></script> -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // Product Cart Slider 1
+        var swiper = new Swiper(".product-slider-1", {
+          slidesPerView: 5,
+          spaceBetween: 8,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
